@@ -8,8 +8,15 @@ const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
 const locationPage = document.getElementById("locationPage");
 const logo = document.getElementById("logo");
+const halfmandala = document.getElementById("halfmandala");
+const halfbrain = document.getElementById("halfbrain");
 const mandala = document.getElementById("mandala");
 const oxytocin = document.getElementById("oxytocin");
+const whereMotto = document.getElementById("whereMotto");
+const scienceMotto = document.getElementById("scienceMotto");
+const andMotto = document.getElementById("andMotto");
+const presenceMotto = document.getElementById("presenceMotto");
+const integrateMotto = document.getElementById("integrateMotto");
 
 let activePage = homePage;
 const pages = {
@@ -62,9 +69,22 @@ servicesPage.addEventListener("click", (e) => {
 
 
 window.onscroll = () => {
-  // mandala.style.transform = `scale(${1 + html.scrollTop / 50})`;
-  // mandala.style.transform = `rotate(${html.scrollTop / 2}deg)`;
-  // if (html.scrollTop < 100) {
-  //   oxytocin.style.transform = `scale(${1 - html.scrollTop / 100}) translateY(-${html.scrollTop}px)`;
+  let scroll = html.scrollTop;
+  halfmandala.style.transform = `translateY(${scroll / 1.5}px)`;
+  halfbrain.style.transform = `translateY(-${scroll / 1.5}px)`;
+  if (scroll > 250) {
+    halfmandala.style.transform = `translateX(-${scroll - 250}px) translateY(${scroll / 1.5}px)`;
+    halfbrain.style.transform = `translateX(${scroll - 250}px) translateY(-${scroll / 1.5}px)`;
+    integrateMotto.style.fontSize = `${(scroll - 250) / 2}px`;
+  } else {integrateMotto.style.fontSize = `0px`;}
+  if (scroll > 425) integrateMotto.style.fontSize = `${(425 - 250) / 2}px`;
+  if (scroll < 170) whereMotto.style.transform = `translateX(${scroll}px)`;
+  if (scroll < 235) scienceMotto.style.transform = `translateX(${scroll / 1.25}px)`;
+  if (scroll < 200) andMotto.style.transform = `translateX(-${scroll}px)`;
+  if (scroll < 210) presenceMotto.style.transform = `translateX(-${scroll / 1.25}px)`;
+  // mandala.style.transform = `scale(${1 + scroll / 50})`;
+  // mandala.style.transform = `rotate(${scroll / 2}deg)`;
+  // if (scroll < 100) {
+  //   oxytocin.style.transform = `scale(${1 - scroll / 100}) translateY(-${scroll}px)`;
   // }
 };

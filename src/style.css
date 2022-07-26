@@ -151,7 +151,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../watercolor1.jpg);
+  background-image: url(./img/watercolor1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ header {
   position: absolute;
   height: 125%;
   width: 125%;
-  background-image: url(../mandala00.png);
+  background-image: url(./img/mandala00.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@ header {
   right: 0;
   height: 75%;
   width: 100%;
-  background-image: url(../oxytocin.png);
+  background-image: url(./img/oxytocin.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -291,17 +291,17 @@ h2 {
 }
 
 #beginIntBody {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/26d43f6b-5d2c-4e08-9389-2ef11770c324/robina-weermeijer-IHfOpAzzjHM-unsplash.jpg?format=1500w);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/26d43f6b-5d2c-4e08-9389-2ef11770c324/robina-weermeijer-IHfOpAzzjHM-unsplash.jpg);
 }
 
 #advIntBody {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639701644010-GFARKYHIS2LH4JMA5HD2/unsplash-image-NqCK_XkrtCY.jpg?format=1500w);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639701644010-GFARKYHIS2LH4JMA5HD2/unsplash-image-NqCK_XkrtCY.jpg);
 }
 
 #myoBody {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/e3481db9-1d1e-4801-95a0-a5b48cc02cba/image-asset.jpg?format=1500w);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/e3481db9-1d1e-4801-95a0-a5b48cc02cba/image-asset.jpg);
 }
 
 #ashiatsuBody {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639702412707-TL26C4FXGJ0IHZSFXUC5/GettyImages-454998377.jpg?format=1500w);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639702412707-TL26C4FXGJ0IHZSFXUC5/GettyImages-454998377.jpg);
 }

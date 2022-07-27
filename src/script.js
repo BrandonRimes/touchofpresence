@@ -12,6 +12,7 @@ const halfmandala = document.getElementById("halfmandala");
 const halfbrain = document.getElementById("halfbrain");
 const mandala = document.getElementById("mandala");
 const oxytocin = document.getElementById("oxytocin");
+const motto = document.querySelectorAll(".motto");
 const whereMotto = document.getElementById("whereMotto");
 const scienceMotto = document.getElementById("scienceMotto");
 const andMotto = document.getElementById("andMotto");
@@ -75,7 +76,10 @@ window.onscroll = () => {
   if (scroll > 250) {
     halfmandala.style.transform = `translateX(-${scroll - 250}px) translateY(${scroll / 1.5}px)`;
     halfbrain.style.transform = `translateX(${scroll - 250}px) translateY(-${scroll / 1.5}px)`;
+    halfmandala.style.opacity = `${1 - (scroll - 250) / 100}`;
+    halfbrain.style.opacity = `${1 - (scroll - 250) / 100}`;
     integrateMotto.style.fontSize = `${(scroll - 250) / 2}px`;
+    motto.style.color = "white";
   } else {integrateMotto.style.fontSize = `0px`;}
   if (scroll > 425) integrateMotto.style.fontSize = `${(425 - 250) / 2}px`;
   if (scroll < 170) whereMotto.style.transform = `translateX(${scroll}px)`;

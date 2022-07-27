@@ -70,18 +70,20 @@ servicesPage.addEventListener("click", (e) => {
 
 window.onscroll = () => {
   let scroll = html.scrollTop;
-  halfmandala.style.transform = `translateY(${scroll / 1.5}px)`;
-  halfbrain.style.transform = `translateY(-${scroll / 1.5}px)`;
-  if (scroll > 250) {
-    halfmandala.style.transform = `translateX(-${scroll - 250}px) translateY(${scroll / 1.5}px)`;
-    halfbrain.style.transform = `translateX(${scroll - 250}px) translateY(-${scroll / 1.5}px)`;
-    integrateMotto.style.fontSize = `${(scroll - 250) / 2}px`;
-  } else {integrateMotto.style.fontSize = `0px`;}
-  if (scroll > 425) integrateMotto.style.fontSize = `${(425 - 250) / 2}px`;
-  if (scroll < 170) whereMotto.style.transform = `translateX(${scroll}px)`;
-  if (scroll < 235) scienceMotto.style.transform = `translateX(${scroll / 1.25}px)`;
-  if (scroll < 200) andMotto.style.transform = `translateX(-${scroll}px)`;
-  if (scroll < 210) presenceMotto.style.transform = `translateX(-${scroll / 1.25}px)`;
+  // halfmandala.style.transform = `translateY(${scroll / 1.5}px)`;
+  // halfbrain.style.transform = `translateY(-${scroll / 1.5}px)`;
+  // if (scroll > 250) {
+    // halfmandala.style.transform = `translateX(-${scroll - 250}px) translateY(${scroll / 1.5}px)`;
+    // halfmandala.style.opacity = `${1 - (scroll - 250) / 100}`;
+    // halfbrain.style.opacity = `${1 - (scroll - 250) / 100}`;
+    // halfbrain.style.transform = `translateX(${scroll - 250}px) translateY(-${scroll / 1.5}px)`;
+  //   integrateMotto.style.fontSize = `${(scroll - 250) / 2}px`;
+  // } else {integrateMotto.style.fontSize = `0px`;}
+  // if (scroll > 425) integrateMotto.style.fontSize = `${(425 - 250) / 2}px`;
+  // if (scroll < 170) whereMotto.style.transform = `translateX(${scroll}px)`;
+  // if (scroll < 235) scienceMotto.style.transform = `translateX(${scroll / 1.25}px)`;
+  // if (scroll < 200) andMotto.style.transform = `translateX(-${scroll}px)`;
+  // if (scroll < 210) presenceMotto.style.transform = `translateX(-${scroll / 1.25}px)`;
   // mandala.style.transform = `scale(${1 + scroll / 50})`;
   // mandala.style.transform = `rotate(${scroll / 2}deg)`;
   // if (scroll < 100) {

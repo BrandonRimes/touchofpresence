@@ -219,7 +219,7 @@ header {
   left: 1rem;
   height: 75%;
   width: 90%;
-  background-image: url(./img/MoleLettersF.png);
+  background-image: url(./img/MoleLettersT.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -293,7 +293,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(./img/menubg3.png);
+  background-image: url(./img/menubg2.png);
   background-position: center;
   background-size: 140%;
   background-repeat: no-repeat;

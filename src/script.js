@@ -83,27 +83,31 @@ servicesPage.addEventListener("click", (e) => {
 window.onscroll = () => {
   let scroll = html.scrollTop;
 
-  theName.style.opacity = `${100 - (scroll / 2)}%`
+  theName.style.transform = `translateY(-${scroll * 1.5}px)`
+  theName.style.opacity = `${100 - (scroll / 1.5)}%`
 
-  if (scroll < 50) {
-    touchName.style.transform = `translateY(${scroll}px)`
-    touchName.style.opacity = "100%"
-  } else {
+  if (scroll > 50) {
+    touchName.style.transform = `translateY(-${(scroll - 50)}px)`
     touchName.style.opacity = `${100 - ((scroll - 50) / 2)}%`
+  } else {
+    touchName.style.transform = `translateY(0px)`
+    touchName.style.opacity = "100%"
   };
 
-  if (scroll < 100) {
-    ofName.style.transform = `translateY(${scroll}px)`
-    ofName.style.opacity = "100%"
-  } else {
+  if (scroll > 100) {
+    ofName.style.transform = `translateY(-${(scroll - 100) / 1.5}px)`
     ofName.style.opacity = `${100 - ((scroll - 100) / 2)}%`
+  } else {
+    ofName.style.transform = `translateY(0px)`
+    ofName.style.opacity = "100%"
   };
 
-  if (scroll < 150) {
-    presenceName.style.transform = `translateY(${scroll}px)`
-    presenceName.style.opacity = "100%"
-  } else {
+  if (scroll > 150) {
+    presenceName.style.transform = `translateY(-${(scroll - 150) / 2}px)`
     presenceName.style.opacity = `${100 - ((scroll - 150) / 2)}%`
+  } else {
+    presenceName.style.transform = `translateY(0px)`
+    presenceName.style.opacity = "100%"
   };
 
   // if (scroll > 90 && scroll <= 315) oxyPiece1.style.transform = `translateX(${7.35 - ((scroll - 90) / 35)}rem) translateY(${-4.6 + ((scroll - 90) / 50)}rem) scale(${1 - ((scroll - 90) / 225)})`;

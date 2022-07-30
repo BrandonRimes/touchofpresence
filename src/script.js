@@ -3,28 +3,39 @@ const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
-const teamPage = document.getElementById("teamPage");
+const tribePage = document.getElementById("tribePage");
 const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
 const locationPage = document.getElementById("locationPage");
 const logo = document.getElementById("logo");
-const halfmandala = document.getElementById("halfmandala");
-const halfbrain = document.getElementById("halfbrain");
 const mandala = document.getElementById("mandala");
 const oxytocin = document.getElementById("oxytocin");
+const oxyPieces = document.getElementById("oxyPieces");
+const oxyPiece1 = document.getElementById("oxyPiece1");
+const oxyPiece2 = document.getElementById("oxyPiece2");
+const oxyPiece3 = document.getElementById("oxyPiece3");
+const oxyPiece4 = document.getElementById("oxyPiece4");
+const oxyPiece5 = document.getElementById("oxyPiece5");
+const oxyPiece6 = document.getElementById("oxyPiece6");
+const oxyPiece7 = document.getElementById("oxyPiece7");
+const oxyPiece8 = document.getElementById("oxyPiece8");
 const motto = document.querySelectorAll(".motto");
 const whereMotto = document.getElementById("whereMotto");
 const scienceMotto = document.getElementById("scienceMotto");
 const andMotto = document.getElementById("andMotto");
 const presenceMotto = document.getElementById("presenceMotto");
 const integrateMotto = document.getElementById("integrateMotto");
+const theName = document.getElementById("theName");
+const touchName = document.getElementById("touchName");
+const ofName = document.getElementById("ofName");
+const presenceName = document.getElementById("presenceName");
 
 let activePage = homePage;
 const pages = {
   "homeOption": homePage,
   "menuOption": menuPage,
   "aboutOption": aboutPage,
-  "teamOption": teamPage,
+  "tribeOption": tribePage,
   "servicesOption": servicesPage,
   "locationOption": locationPage
 };
@@ -71,23 +82,48 @@ servicesPage.addEventListener("click", (e) => {
 
 window.onscroll = () => {
   let scroll = html.scrollTop;
-  halfmandala.style.transform = `translateY(${scroll / 1.5}px)`;
-  halfbrain.style.transform = `translateY(-${scroll / 1.5}px)`;
-  if (scroll > 250) {
-    halfmandala.style.transform = `translateX(-${scroll - 250}px) translateY(${scroll / 1.5}px)`;
-    halfbrain.style.transform = `translateX(${scroll - 250}px) translateY(-${scroll / 1.5}px)`;
-    halfmandala.style.opacity = `${1 - (scroll - 250) / 100}`;
-    halfbrain.style.opacity = `${1 - (scroll - 250) / 100}`;
-    integrateMotto.style.fontSize = `${(scroll - 250) / 2}px`;
-    motto.style.color = "white";
-  } else {integrateMotto.style.fontSize = `0px`;}
-  if (scroll > 425) integrateMotto.style.fontSize = `${(425 - 250) / 2}px`;
-  if (scroll < 170) whereMotto.style.transform = `translateX(${scroll}px)`;
-  if (scroll < 235) scienceMotto.style.transform = `translateX(${scroll / 1.25}px)`;
-  if (scroll < 200) andMotto.style.transform = `translateX(-${scroll}px)`;
-  if (scroll < 210) presenceMotto.style.transform = `translateX(-${scroll / 1.25}px)`;
+
+  theName.style.opacity = `${100 - (scroll / 2)}%`
+
+  if (scroll < 50) {
+    touchName.style.transform = `translateY(${scroll}px)`
+    touchName.style.opacity = "100%"
+  } else {
+    touchName.style.opacity = `${100 - ((scroll - 50) / 2)}%`
+  };
+
+  if (scroll < 100) {
+    ofName.style.transform = `translateY(${scroll}px)`
+    ofName.style.opacity = "100%"
+  } else {
+    ofName.style.opacity = `${100 - ((scroll - 100) / 2)}%`
+  };
+
+  if (scroll < 150) {
+    presenceName.style.transform = `translateY(${scroll}px)`
+    presenceName.style.opacity = "100%"
+  } else {
+    presenceName.style.opacity = `${100 - ((scroll - 150) / 2)}%`
+  };
+
+  // if (scroll > 90 && scroll <= 315) oxyPiece1.style.transform = `translateX(${7.35 - ((scroll - 90) / 35)}rem) translateY(${-4.6 + ((scroll - 90) / 50)}rem) scale(${1 - ((scroll - 90) / 225)})`;
+
+  // if (scroll > 60 && scroll <= 260) oxyPiece2.style.transform = `translateX(${3.72 - ((scroll - 60) / 75)}rem) translateY(${-2.6 + ((scroll - 60) / 100)}rem) scale(${1 - ((scroll - 60) / 200)})`;
+
+  // if (scroll > 100 && scroll <= 300) oxyPiece3.style.transform = `translateX(${7.3 - ((scroll - 100) / 25)}rem) translateY(${-0.3 + ((scroll - 100) / 1000)}rem) scale(${1 - ((scroll - 100) / 200)})`;
+
+  // if (scroll > 70 && scroll <= 300) oxyPiece4.style.transform = `translateX(${7.75 - ((scroll - 70) / 30)}rem) translateY(${3.95 - ((scroll - 70) / 75)}rem) scale(${1 - ((scroll - 70) / 230)})`;
+
+  // if (scroll > 20 && scroll <= 320) oxyPiece5.style.transform = `translateX(${3.65 - ((scroll - 20) / 75)}rem) translateY(${3.4 - ((scroll - 20) / 75)}rem) scale(${1 - ((scroll - 20) / 300)})`;
+
+  // if (scroll > 0 && scroll <= 200) oxyPiece6.style.transform = `translateX(${0.97 - (scroll / 200)}rem) translateY(${1.25 - (scroll / 100)}rem) scale(${1 - (scroll / 200)})`;
+
+  // if (scroll > 40 && scroll <= 240) oxyPiece7.style.transform = `translateX(${-3.65 + ((scroll - 40) / 50)}rem) translateY(${2.75 - ((scroll - 40) / 75)}rem) scale(${1 - ((scroll - 40) / 200)})`;
+
+  // if (scroll > 80 && scroll <= 255) oxyPiece8.style.transform = `translateX(${-6.85 + ((scroll - 80) / 25)}rem) translateY(${3.42 - ((scroll - 80) / 50)}rem) scale(${1 - ((scroll - 80) / 175)})`;
+
   // mandala.style.transform = `scale(${1 + scroll / 50})`;
-  // mandala.style.transform = `rotate(${scroll / 2}deg)`;
+  // mandala.style.transform = `rotate(${scroll / 3}deg)`;
   // if (scroll < 100) {
   //   oxytocin.style.transform = `scale(${1 - scroll / 100}) translateY(-${scroll}px)`;
   // }

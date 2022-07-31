@@ -126,9 +126,9 @@ window.onscroll = () => {
 
   // if (scroll > 80 && scroll <= 255) oxyPiece8.style.transform = `translateX(${-6.85 + ((scroll - 80) / 25)}rem) translateY(${3.42 - ((scroll - 80) / 50)}rem) scale(${1 - ((scroll - 80) / 175)})`;
 
-  // mandala.style.transform = `scale(${1 + scroll / 50})`;
+  mandala.style.transform = `translateY(${scroll / 1.5}px)`;
   // mandala.style.transform = `rotate(${scroll / 3}deg)`;
   // if (scroll < 100) {
-  //   oxytocin.style.transform = `scale(${1 - scroll / 100}) translateY(-${scroll}px)`;
-  // }
+  oxytocin.style.transform = `translateY(-${scroll / 20}px)`;
+  oxytocin.style.opacity = `${100 - (scroll / 5)}%`
 };

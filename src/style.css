@@ -124,8 +124,9 @@ body {
   border-radius: 10px;
   /* border: 1px solid rgba(128, 128, 128, 0.501); */
   border: none;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-family: 'Italiana', serif;
+  letter-spacing: 0.15rem;
   font-weight: bolder;
   background: var(--button-background);
   z-index: 100;
@@ -167,19 +168,30 @@ body {
   top: 0;
   height: 100vh;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80);
+  background-image: url(./img/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
+/* #bgBottom {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./img/bgbottom.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
 #homePage {
   display: flex;
   position: relative;
   /* background-position: center; */
   padding: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), transparent);/* ; */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), transparent);
 }
 
 #firstView {
@@ -201,38 +213,39 @@ body {
 
 #logo {
   position: fixed;
-  top: 3rem;
+  top: 6.3%;
   left: 50%;
   transform: translateX(-50%);
-  height: 20rem;
-  width: 20rem;
+  height: 49.5%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url();
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* border: var(--border); */
+  overflow: hidden;
+  clip-path: polygon(100% 99%, 92% 99.5%, 84% 100%, 73% 99%, 60% 99.5%, 55% 98%, 51% 96%, 49% 96%, 45% 97.5%, 40% 96%, 35% 94%, 29% 94.5%, 21% 92%, 18.5% 91%, 13% 92.5%, 9% 93%, 6% 94%, 0% 93%, 0% 0%, 100% 0%);
 }
 
 #mandala {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  top: 0;
+  height: 20rem;
+  width: 20rem;
   background-image: url(./img/theMandala.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  /* animation: mandalaSpin 15s linear infinite; */
-  /* filter: drop-shadow(0px 0px 1px var(--coral)); */
+  /* animation: mandalaSpin 1s linear infinite alternate; */
+  /* filter: drop-shadow(0px 0px 3px white); */
 }
 
 @keyframes mandalaSpin {
   0% {
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
+
   }
   100% {
-    transform: rotate(360deg);
+    /* transform: rotate(360deg); */
   }
 }
 
@@ -344,6 +357,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
   font-family: 'Italiana', serif;
+  letter-spacing: 0.2rem;
   /* display: none; */
 }
 
@@ -386,6 +400,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Italiana', serif;
+  letter-spacing: 0.2rem;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.75);
 }
 

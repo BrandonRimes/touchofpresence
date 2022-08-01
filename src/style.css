@@ -366,31 +366,31 @@ h1 {
 }
 
 #scienceMotto {
-  top: 22vh;
+  top: 23vh;
 }
 
 #andMotto {
-  top: 30vh;
+  top: 32vh;
 }
 
 #presenceMotto {
-  top: 38vh;
+  top: 41vh;
+}
+
+#integrateMotto {
+  top: 48vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* #integrateMotto {
-  top: 46vh;
-  display: flex;
-  justify-content: space-between;
-} */
-
-#integrateMotto {
   top: 46vh;
   height: 7rem;
   font-size: 5rem;
   text-shadow: -1px -1px 0px white, 2px 2px 0px black;
   background: linear-gradient(to bottom, transparent, var(--coral) 25% 75%, transparent);
   mix-blend-mode: screen;
-}
+} */
 
 #integrateMotto span {
   font-size: 5rem;

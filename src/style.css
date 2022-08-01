@@ -230,24 +230,13 @@ body {
 #mandala {
   position: absolute;
   top: 10%;
-  height: 20rem;
-  width: 20rem;
+  height: 100%;
+  width: 100%;
   background-image: url(./img/theMandala.png);
-  background-position: center;
+  background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
-  /* animation: mandalaSpin 1s linear infinite alternate; */
   /* filter: drop-shadow(0px 0px 3px white); */
-}
-
-@keyframes mandalaSpin {
-  0% {
-    /* transform: rotate(0deg); */
-
-  }
-  100% {
-    /* transform: rotate(360deg); */
-  }
 }
 
 /* #logo::after {
@@ -268,8 +257,6 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  /* z-index: 10; */
-  /* display: none; */
   /* filter: drop-shadow(0px 0px 2px white); */
 }
 
@@ -370,49 +357,47 @@ h1 {
   position: fixed;
   font-size: 2rem;
   opacity: 0;
+  width: 100%;
+  text-align: center;
 }
 
 #whereMotto {
-  top: 12%;
-  left: 10%;
+  top: 14vh;
 }
 
 #scienceMotto {
-  top: 18%;
-  left: 10%;
+  top: 22vh;
 }
 
 #andMotto {
-  top: 38%;
-  left: 22%;
+  top: 30vh;
 }
 
 #presenceMotto {
-  top: 38%;
-  left: 42%;
-}
-
-#integrateMotto {
-  top: 46%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  top: 38vh;
 }
 
 /* #integrateMotto {
+  top: 46vh;
+  display: flex;
+  justify-content: space-between;
+} */
+
+#integrateMotto {
+  top: 46vh;
   height: 7rem;
   font-size: 5rem;
-  letter-spacing: 10px;
-  background: linear-gradient(to bottom, transparent, var(--coral) 20% 80%, transparent);
+  text-shadow: -1px -1px 0px white, 2px 2px 0px black;
+  background: linear-gradient(to bottom, transparent, var(--coral) 25% 75%, transparent);
   mix-blend-mode: screen;
-} */
+}
 
 #integrateMotto span {
   font-size: 5rem;
   color: white;
   font-family: 'Italiana', serif;
   font-weight: bolder;
-  text-shadow: 0px 1px 2px var(--coral);
+  text-shadow: 0px 1px 3px var(--coral);
 }
 
 h2 {

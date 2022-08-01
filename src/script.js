@@ -84,11 +84,11 @@ window.onscroll = () => {
   let scroll = html.scrollTop;
 
   theName.style.transform = `translateY(-${scroll * 1.5}px)`
-  theName.style.opacity = `${100 - (scroll / 1.5)}%`
+  theName.style.opacity = `${100 - (scroll / 1)}%`
 
   if (scroll > 50) {
     touchName.style.transform = `translateY(-${(scroll - 50)}px)`
-    touchName.style.opacity = `${100 - ((scroll - 50) / 2)}%`
+    touchName.style.opacity = `${100 - ((scroll - 50) / 1)}%`
   } else {
     touchName.style.transform = `translateY(0px)`
     touchName.style.opacity = "100%"
@@ -136,6 +136,6 @@ window.onscroll = () => {
 
   mandala.style.transform = `translateY(${scroll / 1.5}px)`;
 
-  oxytocin.style.transform = `translateY(-${scroll / 20}px)`;
-  oxytocin.style.opacity = `${100 - (scroll / 5)}%`
+  oxytocin.style.transform = `translateY(${scroll / 1}px)`;
+  oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 };

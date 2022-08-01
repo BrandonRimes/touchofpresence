@@ -380,7 +380,7 @@ h1 {
 #integrateMotto {
   top: 48vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 /* #integrateMotto {

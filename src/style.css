@@ -603,7 +603,7 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  height: 80%;
+  height: 80vh;
   border-radius: 15px;
   background: var(--main-background);
   padding-bottom: 0;

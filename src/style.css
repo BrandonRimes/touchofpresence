@@ -352,7 +352,7 @@ body {
 h1 {
   width: 90%;
   position: fixed;
-  top: 60%;
+  top: 60vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;

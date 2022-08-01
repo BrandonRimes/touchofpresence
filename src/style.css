@@ -369,40 +369,57 @@ h1 {
 .motto {
   position: fixed;
   font-size: 2rem;
+  opacity: 0;
 }
 
 #whereMotto {
-  top: 12rem;
-  left: -6rem;
+  top: 12%;
+  left: 10%;
 }
 
 #scienceMotto {
-  top: 15rem;
-  left: -8rem;
+  top: 18%;
+  left: 10%;
 }
 
 #andMotto {
-  top: 25rem;
-  right: -6rem;
+  top: 38%;
+  left: 22%;
 }
 
 #presenceMotto {
-  top: 28rem;
-  right: -8rem;
+  top: 38%;
+  left: 42%;
 }
 
 #integrateMotto {
-  top: 18rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0rem;
+  top: 46%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #integrateMotto {
+  height: 7rem;
+  font-size: 5rem;
+  letter-spacing: 10px;
+  background: linear-gradient(to bottom, transparent, var(--coral) 20% 80%, transparent);
+  mix-blend-mode: screen;
+} */
+
+#integrateMotto span {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Italiana', serif;
+  font-weight: bolder;
+  text-shadow: 0px 1px 2px var(--coral);
 }
 
 h2 {
   text-align: center;
   font-family: 'Italiana', serif;
   letter-spacing: 0.2rem;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.75);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.75);
 }
 
 #scroll {

@@ -110,6 +110,14 @@ window.onscroll = () => {
     presenceName.style.opacity = "100%"
   };
 
+  if (scroll > 250) {
+    whereMotto.style.opacity = `${scroll - 250}%`;
+    scienceMotto.style.opacity = `${scroll - 275}%`;
+    andMotto.style.opacity = `${scroll - 350}%`;
+    presenceMotto.style.opacity = `${scroll - 375}%`;
+    integrateMotto.style.opacity = `${scroll - 450}%`;
+  } else {motto.forEach(word => word.style.opacity = "0")}
+
   // if (scroll > 90 && scroll <= 315) oxyPiece1.style.transform = `translateX(${7.35 - ((scroll - 90) / 35)}rem) translateY(${-4.6 + ((scroll - 90) / 50)}rem) scale(${1 - ((scroll - 90) / 225)})`;
 
   // if (scroll > 60 && scroll <= 260) oxyPiece2.style.transform = `translateX(${3.72 - ((scroll - 60) / 75)}rem) translateY(${-2.6 + ((scroll - 60) / 100)}rem) scale(${1 - ((scroll - 60) / 200)})`;
@@ -127,8 +135,7 @@ window.onscroll = () => {
   // if (scroll > 80 && scroll <= 255) oxyPiece8.style.transform = `translateX(${-6.85 + ((scroll - 80) / 25)}rem) translateY(${3.42 - ((scroll - 80) / 50)}rem) scale(${1 - ((scroll - 80) / 175)})`;
 
   mandala.style.transform = `translateY(${scroll / 1.5}px)`;
-  // mandala.style.transform = `rotate(${scroll / 3}deg)`;
-  // if (scroll < 100) {
+
   oxytocin.style.transform = `translateY(-${scroll / 20}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 5)}%`
 };

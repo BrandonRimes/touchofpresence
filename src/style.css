@@ -2,9 +2,14 @@
   --coral: #fe8b8f;
   --border: 1px solid deeppink;
   --main-background: rgba(255, 255, 255, 0.5);
+  --text-background: rgba(255, 255, 255, 0.75);
   --button-background: var(--main-background);
   --text-color: #323232;
   --font: 'Italiana', serif;
+  --card-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5),
+    -2px 2px 3px rgba(0, 0, 0, 0.25),
+    inset 1px 1px 3px rgba(0, 0, 0, 0.33),
+    inset 4px 4px 3px rgba(255, 255, 255, 0.33);
   --menu-btn-transition: all 0.25s linear;
 }
 
@@ -70,9 +75,6 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  /* background: var(--button-background);
-  box-shadow: inset -2px 2px 4px black,
-    inset 2px -2px 4px white; */
   z-index: 100;
 }
 
@@ -83,8 +85,8 @@ body {
   border-radius: 10px;
   background-color: var(--coral);
   transition: var(--menu-btn-transition);
-  /* box-shadow: inset 1px -1px 1px rgba(255, 255, 255, 0.25),
-    inset -1px 1px 1px rgba(0, 0, 0, 0.25); */
+  box-shadow: inset 1px -1px 1px rgba(255, 255, 255, 0.25),
+    inset -1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 #menuButtonLine::before,
@@ -449,7 +451,7 @@ h2 {
 #tribeContent,
 #servicesContent,
 #contactContent {
-  min-height: 88%;
+  min-height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -478,29 +480,46 @@ h2 {
   border-radius: 10px;
   margin: 1rem 0;
   overflow: hidden;
-  box-shadow: inset -4px 4px 5px white,
-    -3px 3px 5px -2px black;
+  box-shadow: var(--card-shadow);
   transition: var(--menu-btn-transition);
-  background: var(--main-background);
+  background: var(--text-background);
 }
 
 .services h2 {
   position: absolute;
-  top: 0;
+  top: 2%;
   width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
   transition: var(--menu-btn-transition);
 }
 
-.servicePrice {
+.servicePrice1,
+.servicePrice2 {
   position: absolute;
-  top: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: black;
-  /* text-shadow: 1px 1px 0px white; */
+  top: 40%;
+  /* width: 100%; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  color: white;
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 1px black;
   transition: var(--menu-btn-transition);
   font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.servicePrice1 {
+  left: 10%;
+}
+
+.servicePrice2 {
+  right: 10%;
+}
+
+.serviceHeading {
   display: none;
+  letter-spacing: 1px;
 }
 
 .serviceBody {
@@ -518,13 +537,13 @@ h2 {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.5);
   transition: var(--menu-btn-transition);
 }
 
 .serviceBodyText {
   display: none;
-  padding: 1rem;
+  padding: 5%;
   transition: var(--menu-btn-transition);
 }
 
@@ -555,6 +574,7 @@ h2 {
 .services.open {
   transition: var(--menu-btn-transition);
   overflow: scroll;
+  padding-bottom: 10%;
 }
 
 .services.open h2 {
@@ -563,13 +583,23 @@ h2 {
   text-shadow: 0 0 3px black;
 }
 
-.services.open .servicePrice {
-  top: 5rem;
+.services.open .servicePrice1,
+.services.open .servicePrice2 {
+  display: none;
+  /* position: unset;
+  transform: unset;
+  color: var(--text-color);
+  text-shadow: 1px 1px 1px white; */
+}
+
+.services.open .serviceHeading {
+  display: block;
 }
 
 .services.open .serviceBody {
   height: 4rem;
   margin-top: 0;
+  margin-bottom: 5%;
 }
 
 .services.open .serviceBody::after {
@@ -578,6 +608,22 @@ h2 {
 
 .services.open .serviceBodyText {
   display: block;
+}
+
+.services.open .serviceCTA {
+  animation: ctaOpen 0.5s ease-in-out infinite alternate;
+  filter: drop-shadow(-1px -1px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes ctaOpen {
+  0% {
+    transform: translateY(0) translateX(-50%) rotate(-135deg);
+    border-radius: 0 0 10px 0;
+  }
+  100% {
+    transform: translateY(0.5rem) translateX(-50%) rotate(-135deg);
+    border-radius: 0;
+  }
 }
 
 #beginIntBody {
@@ -605,13 +651,10 @@ h2 {
   width: 90%;
   height: 80vh;
   border-radius: 15px;
-  background: var(--main-background);
+  background: var(--text-background);
   padding-bottom: 0;
   padding-top: 3%;
-  box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5),
-    -2px 2px 3px rgba(0, 0, 0, 0.25),
-    inset 1px 1px 3px rgba(0, 0, 0, 0.33),
-    inset 4px 4px 3px rgba(255, 255, 255, 0.33);
+  box-shadow: var(--card-shadow);
 }
 
 #locationPage h3 {

@@ -3,7 +3,7 @@
   --border: 1px solid deeppink;
   --main-background: rgba(255, 255, 255, 0.5);
   --text-background: rgba(255, 255, 255, 0.75);
-  --button-background: var(--main-background);
+  --button-background: var(--text-background);
   --text-color: #323232;
   --font: 'Italiana', serif;
   --card-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5),
@@ -124,7 +124,6 @@ body {
   height: 4rem;
   width: 8rem;
   border-radius: 10px;
-  /* border: 1px solid rgba(128, 128, 128, 0.501); */
   border: none;
   font-size: 1.5rem;
   font-family: var(--font);
@@ -136,14 +135,14 @@ body {
 
 #bookButton {
   left: 0;
-  box-shadow: inset 2px -2px 4px black,
-    inset -2px 2px 4px white;
+  box-shadow: inset -2px 2px 4px white,
+    inset 2px -2px 4px black;
 }
 
 #servicesButton {
   right: 0;
-  box-shadow: inset -2px -2px 4px black,
-    inset 2px 2px 4px white;
+  box-shadow: inset 2px 2px 4px white,
+    inset -2px -2px 4px black;
 }
 
 .pages {
@@ -371,7 +370,7 @@ h1 {
   opacity: 0;
   width: 100%;
   text-align: center;
-  color: white;
+  color: var(--text-color);
   /* text-shadow: 0 1px var(--coral); */
 }
 
@@ -395,6 +394,7 @@ h1 {
   top: 48vh;
   display: flex;
   justify-content: space-evenly;
+  color: var(--text-color);
 }
 
 /* #integrateMotto {
@@ -408,10 +408,10 @@ h1 {
 
 #integrateMotto span {
   font-size: 5rem;
-  color: white;
+  color: var(--text-color);
   font-family: var(--font);
   font-weight: bolder;
-  text-shadow: 0px -1px 2px var(--coral);
+  text-shadow: 1px 1px 0px var(--coral);
 }
 
 h2 {
@@ -433,7 +433,6 @@ h2 {
 #servicesPage,
 #locationPage {
   display: none;
-
 }
 
 #aboutContainer,
@@ -442,6 +441,7 @@ h2 {
 #contactContainer {
   position: fixed;
   height: 88%;
+  min-height: 88%;
   width: 100%;
   overflow-y: scroll;
   padding-bottom: 20%;
@@ -645,11 +645,10 @@ h2 {
 /* CONTACT PAGE ------------------------------ */
 
 #contactContainer {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   width: 90%;
   height: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 15px;
   background: var(--text-background);
   padding-bottom: 0;
@@ -673,3 +672,20 @@ h2 {
   justify-content: center;
   background-color: #fe8b8f81;
 }
+
+/* ABOUT PAGE ---------------------------------- */
+
+#aboutContainer {
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  background: var(--text-background);
+  box-shadow: var(--card-shadow);
+}
+
+#aboutContent {
+  padding: 5%;
+}
+
+/* TRIBE PAGE ---------------------------------- */

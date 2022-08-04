@@ -6,19 +6,12 @@ const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
 const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
-const locationPage = document.getElementById("locationPage");
+const servicesBG = document.getElementById("bgServices");
+const servicesHeader = document.getElementById("servicesHeader");
+const connectPage = document.getElementById("connectPage");
 const logo = document.getElementById("logo");
 const mandala = document.getElementById("mandala");
 const oxytocin = document.getElementById("oxytocin");
-const oxyPieces = document.getElementById("oxyPieces");
-const oxyPiece1 = document.getElementById("oxyPiece1");
-const oxyPiece2 = document.getElementById("oxyPiece2");
-const oxyPiece3 = document.getElementById("oxyPiece3");
-const oxyPiece4 = document.getElementById("oxyPiece4");
-const oxyPiece5 = document.getElementById("oxyPiece5");
-const oxyPiece6 = document.getElementById("oxyPiece6");
-const oxyPiece7 = document.getElementById("oxyPiece7");
-const oxyPiece8 = document.getElementById("oxyPiece8");
 const motto = document.querySelectorAll(".motto");
 const whereMotto = document.getElementById("whereMotto");
 const scienceMotto = document.getElementById("scienceMotto");
@@ -37,7 +30,7 @@ const pages = {
   "aboutOption": aboutPage,
   "tribeOption": tribePage,
   "servicesOption": servicesPage,
-  "locationOption": locationPage
+  "connectOption": connectPage
 };
 
 const toggleMenuButton = () => {
@@ -118,24 +111,16 @@ window.onscroll = () => {
     integrateMotto.style.opacity = `${scroll - 450}%`;
   } else {motto.forEach(word => word.style.opacity = "0")}
 
-  // if (scroll > 90 && scroll <= 315) oxyPiece1.style.transform = `translateX(${7.35 - ((scroll - 90) / 35)}rem) translateY(${-4.6 + ((scroll - 90) / 50)}rem) scale(${1 - ((scroll - 90) / 225)})`;
-
-  // if (scroll > 60 && scroll <= 260) oxyPiece2.style.transform = `translateX(${3.72 - ((scroll - 60) / 75)}rem) translateY(${-2.6 + ((scroll - 60) / 100)}rem) scale(${1 - ((scroll - 60) / 200)})`;
-
-  // if (scroll > 100 && scroll <= 300) oxyPiece3.style.transform = `translateX(${7.3 - ((scroll - 100) / 25)}rem) translateY(${-0.3 + ((scroll - 100) / 1000)}rem) scale(${1 - ((scroll - 100) / 200)})`;
-
-  // if (scroll > 70 && scroll <= 300) oxyPiece4.style.transform = `translateX(${7.75 - ((scroll - 70) / 30)}rem) translateY(${3.95 - ((scroll - 70) / 75)}rem) scale(${1 - ((scroll - 70) / 230)})`;
-
-  // if (scroll > 20 && scroll <= 320) oxyPiece5.style.transform = `translateX(${3.65 - ((scroll - 20) / 75)}rem) translateY(${3.4 - ((scroll - 20) / 75)}rem) scale(${1 - ((scroll - 20) / 300)})`;
-
-  // if (scroll > 0 && scroll <= 200) oxyPiece6.style.transform = `translateX(${0.97 - (scroll / 200)}rem) translateY(${1.25 - (scroll / 100)}rem) scale(${1 - (scroll / 200)})`;
-
-  // if (scroll > 40 && scroll <= 240) oxyPiece7.style.transform = `translateX(${-3.65 + ((scroll - 40) / 50)}rem) translateY(${2.75 - ((scroll - 40) / 75)}rem) scale(${1 - ((scroll - 40) / 200)})`;
-
-  // if (scroll > 80 && scroll <= 255) oxyPiece8.style.transform = `translateX(${-6.85 + ((scroll - 80) / 25)}rem) translateY(${3.42 - ((scroll - 80) / 50)}rem) scale(${1 - ((scroll - 80) / 175)})`;
-
   mandala.style.transform = `translateY(${scroll / 1.5}px)`;
 
   oxytocin.style.transform = `translateY(${scroll / 1}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
+
+  servicesBG.style.transform = `translateY(-${scroll / 1.4}px)`;
+  // let servicesHeaderY = servicesHeader.getBoundingClientRect().y;
+  // if (scroll > 0) {
+  //   servicesHeader.classList.add("atTop");
+  // } else {
+  //   servicesHeader.classList.remove("atTop");
+  // };;
 };

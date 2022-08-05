@@ -116,8 +116,8 @@ window.onscroll = () => {
   oxytocin.style.transform = `translateY(${scroll / 1}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 
-  servicesBG.style.transform = `translateY(-${(scroll / screen.height) * 70}%)`;
-  console.log((scroll / screen.height) * 70);
+  servicesBG.style.transform = `translateY(-${(scroll / screen.height) * 75}%)`;
+  console.log((scroll / screen.height) * 75);
   // let servicesHeaderY = servicesHeader.getBoundingClientRect().y;
   // if (scroll > 0) {
   //   servicesHeader.classList.add("atTop");

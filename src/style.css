@@ -410,27 +410,27 @@ h2 {
 }
 
 #serviceBgImg2 {
-  margin-top: 4vh;
-  height: 52vh;
+  margin-top: 10%;
+  height: 55%;
   background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/26d43f6b-5d2c-4e08-9389-2ef11770c324/robina-weermeijer-IHfOpAzzjHM-unsplash.jpg);
 }
 
 #serviceBgImg3 {
-  margin-top: 4vh;
-  height: 50vh;
+  margin-top: 7%;
+  height: 52%;
   background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639701644010-GFARKYHIS2LH4JMA5HD2/unsplash-image-NqCK_XkrtCY.jpg);
 }
 
 #serviceBgImg4 {
-  margin-top: 4vh;
-  height: 50vh;
+  margin-top: 4%;
+  height: 50%;
   background-position: top;
   background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/e3481db9-1d1e-4801-95a0-a5b48cc02cba/image-asset.jpg);
 }
 
 #serviceBgImg5 {
-  margin-top: 4vh;
-  height: 50vh;
+  margin-top: 4%;
+  height: 50%;
   background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639702412707-TL26C4FXGJ0IHZSFXUC5/GettyImages-454998377.jpg);
 }
 
@@ -444,13 +444,13 @@ h2 {
   /* position: relative; */
   width: 100%;
   /* overflow: hidden; */
-  /* box-shadow: var(--card-shadow);
-  transition: var(--menu-btn-transition); */
+  box-shadow: 0 0 10px black;
+  /* transition: var(--menu-btn-transition); */
   background: white;
   display: flex;
   flex-direction: column;
   padding: 3vh 0;
-  /* align-items: center; */
+
   /* display: none; */
 }
 

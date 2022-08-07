@@ -1,12 +1,12 @@
 const html = document.documentElement;
 const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
+const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
 const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
-const servicesBG = document.getElementById("bgServices");
 const servicesHeader = document.getElementById("servicesHeader");
 const connectPage = document.getElementById("connectPage");
 const logo = document.getElementById("logo");
@@ -116,8 +116,10 @@ window.onscroll = () => {
   oxytocin.style.transform = `translateY(${scroll / 1}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 
-  servicesBG.style.transform = `translateY(-${(scroll / screen.height) * 75}%)`;
-  console.log((scroll / screen.height) * 75);
+  BG.forEach(element => {
+    element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;
+  });
+  console.log((scroll / screen.height) * 50);
   // let servicesHeaderY = servicesHeader.getBoundingClientRect().y;
   // if (scroll > 0) {
   //   servicesHeader.classList.add("atTop");

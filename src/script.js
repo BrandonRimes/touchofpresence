@@ -1,6 +1,7 @@
 const html = document.documentElement;
 const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
+const servicesButton = document.getElementById("servicesButton");
 const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
@@ -60,17 +61,25 @@ menuPage.addEventListener("click", (e) => {
   };
 });
 
-servicesPage.addEventListener("click", (e) => {
-  if (e.target.parentElement.className.includes("services")) {
-    let openService = document.getElementById(`${e.target.parentElement.id}`);
-    services.forEach(element => {
-      if (element.id != openService.id) {
-        element.className = "services"
-      }
-    });
-    openService.classList.toggle("open");
-  }
+servicesButton.addEventListener("click", (e) => {
+  activePage.style.display = "none";
+  menuPage.style.display = "none";
+  menuButton.className = "closed";
+  activePage = pages["servicesOption"];
+  activePage.style.display = "flex";
 });
+
+// servicesPage.addEventListener("click", (e) => {
+//   if (e.target.parentElement.className.includes("services")) {
+//     let openService = document.getElementById(`${e.target.parentElement.id}`);
+//     services.forEach(element => {
+//       if (element.id != openService.id) {
+//         element.className = "services"
+//       }
+//     });
+//     openService.classList.toggle("open");
+//   }
+// });
 
 
 window.onscroll = () => {

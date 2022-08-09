@@ -31,9 +31,7 @@ fetch(".netlify/functions/api")
 .then(response => response.json())
 .then(json => {
     serverURL = json.api;
-});
-
-  mapBox.innerHTML = 
+    mapBox.innerHTML = 
   `<iframe
     width="100%"
     height="100%"
@@ -43,7 +41,10 @@ fetch(".netlify/functions/api")
     Henrico,+VA+23238"
     allowfullscreen
   >
-  </iframe>`
+  </iframe>`;
+});
+
+  
 
 let activePage = homePage;
 const pages = {

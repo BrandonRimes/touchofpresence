@@ -33,17 +33,17 @@ fetch(".netlify/functions/api")
     serverURL = json.api;
 });
 
-  // mapBox.innerHTML = 
-  // `<iframe
-  //   width="100%"
-  //   height="100%"
-  //   frameborder="0" style="border:0"
-  //   referrerpolicy="no-referrer-when-downgrade"
-  //   src="https://www.google.com/maps/embed/v1/place?key=${mapkey}&q=1145+Gaskins+Road,+Suite+#105
-  //   Henrico,+VA+23238"
-  //   allowfullscreen
-  // >
-  // </iframe>`
+  mapBox.innerHTML = 
+  `<iframe
+    width="100%"
+    height="100%"
+    frameborder="0" style="border:0"
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/place?key=${serverURL}&q=1145+Gaskins+Road,+Suite+#105
+    Henrico,+VA+23238"
+    allowfullscreen
+  >
+  </iframe>`
 
 let activePage = homePage;
 const pages = {

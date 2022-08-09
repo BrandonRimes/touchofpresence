@@ -27,7 +27,7 @@ const mapBox = document.getElementById("connectMap");
 
 let serverURL;
 
-fetch(".netlify/functions/api.js")
+fetch(".netlify/functions/api")
 .then(response => response.json())
 .then(json => {
     serverURL = json.api;

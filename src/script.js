@@ -24,7 +24,26 @@ const touchName = document.getElementById("touchName");
 const ofName = document.getElementById("ofName");
 const presenceName = document.getElementById("presenceName");
 const mapBox = document.getElementById("connectMap");
-let MAPKEY = "";
+
+let serverURL;
+
+fetch("../netlify/functions/api.js")
+.then(response => response.json())
+.then(json => {
+    serverURL = json.api;
+}).then(serverURL => console.log(serverURL));
+
+  // mapBox.innerHTML = 
+  // `<iframe
+  //   width="100%"
+  //   height="100%"
+  //   frameborder="0" style="border:0"
+  //   referrerpolicy="no-referrer-when-downgrade"
+  //   src="https://www.google.com/maps/embed/v1/place?key=${mapkey}&q=1145+Gaskins+Road,+Suite+#105
+  //   Henrico,+VA+23238"
+  //   allowfullscreen
+  // >
+  // </iframe>`
 
 let activePage = homePage;
 const pages = {
@@ -35,18 +54,6 @@ const pages = {
   "servicesOption": servicesPage,
   "connectOption": connectPage
 };
-
-mapBox.innerHTML = 
-  `<iframe
-    width="100%"
-    height="100%"
-    frameborder="0" style="border:0"
-    referrerpolicy="no-referrer-when-downgrade"
-    src="https://www.google.com/maps/embed/v1/place?key=${MAPKEY}&q=1145+Gaskins+Road,+Suite+#105
-    Henrico,+VA+23238"
-    allowfullscreen
-  >
-  </iframe>`;
 
 const toggleMenuButton = () => {
   menuButton.className == "closed" ?

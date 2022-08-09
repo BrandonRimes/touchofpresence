@@ -24,7 +24,7 @@ const touchName = document.getElementById("touchName");
 const ofName = document.getElementById("ofName");
 const presenceName = document.getElementById("presenceName");
 const mapBox = document.getElementById("connectMap");
-const MAPKEY = config.MAPKEY;
+if (config) { const MAPKEY = config.MAPKEY; };
 
 let activePage = homePage;
 const pages = {

@@ -31,7 +31,7 @@ fetch("../netlify/functions/api.js")
 .then(response => response.json())
 .then(json => {
     serverURL = json.api;
-}).then(serverURL => console.log(serverURL));
+});
 
   // mapBox.innerHTML = 
   // `<iframe

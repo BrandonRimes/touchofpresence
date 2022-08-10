@@ -24,6 +24,7 @@ const touchName = document.getElementById("touchName");
 const ofName = document.getElementById("ofName");
 const presenceName = document.getElementById("presenceName");
 const mapBox = document.getElementById("connectMap");
+const banner = document.getElementById("banner");
 
 let serverURL;
 
@@ -43,8 +44,6 @@ fetch(".netlify/functions/api")
   >
   </iframe>`;
 });
-
-  
 
 let activePage = homePage;
 const pages = {
@@ -89,6 +88,10 @@ servicesButton.addEventListener("click", (e) => {
   menuButton.className = "closed";
   activePage = pages["servicesOption"];
   activePage.style.display = "flex";
+});
+
+banner.addEventListener("click", (e) => {
+  banner.style.display = "none";
 });
 
 // servicesPage.addEventListener("click", (e) => {

@@ -127,7 +127,7 @@ body {
   border: none;
   font-size: 1.5rem;
   font-family: var(--font);
-  letter-spacing: 0.15rem;
+  /* letter-spacing: 0.15rem; */
   font-weight: bolder;
   background: var(--button-background);
   z-index: 100;
@@ -145,6 +145,41 @@ body {
     inset -2px -2px 4px black;
 }
 
+#banner {
+  position: fixed;
+  top: 80vh;
+  z-index: 100;
+  height: 10vh;
+  width: 100%;
+  /* background-color: #3232329a; */
+  background-color: rgba(255, 255, 255, 1);
+  /* background-image: url(https://images.unsplash.com/photo-1528695822914-6f60b5388267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; */
+  padding: 5%;
+  box-shadow: inset 0 0 4px black;
+}
+
+#banner h4 {
+  color: var(--text-color);
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2vh;
+}
+
+#bannerButton {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  height: 2.5vh;
+  width: 2.5vh;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bolder;
+}
+
 .pages {
   width: 100vw;
   min-height: 100vh;
@@ -160,7 +195,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
 }
 
 .bg {
@@ -420,7 +455,8 @@ h2 {
 }
 
 #serviceBgImg1 {
-  background-image: url(https://images.unsplash.com/photo-1534945614667-31e4dc8ca6f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1610308372319-cdc36b9cd100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
 }
 
 #serviceBgImg2 {
@@ -511,9 +547,28 @@ p {
 #connectPage h3 {
   max-width: 95%;
   font-size: 1.5rem;
-  line-height: 150%;
-  letter-spacing: 2px;
+  line-height: 125%;
+  /* letter-spacing: 2px; */
   margin-bottom: 10%;
+}
+
+.calltext {
+  display: inline-block;
+  height: 4vh;
+  width: 8vh;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+#phoneCall {
+  box-shadow: inset -2px 2px 4px white,
+    inset 2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#phoneText {
+  box-shadow: inset 2px 2px 4px white,
+    inset -2px -2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #connectMap {
@@ -545,7 +600,7 @@ p {
 /* TRIBE PAGE ---------------------------------- */
 
 #tribeBgImg1 {
-  background-image: url(https://images.unsplash.com/photo-1588791095211-441bb45323f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
+  background-image: url(https://images.unsplash.com/photo-1633990035709-3abc9395f10b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
 }
 
 .tribeImages {

@@ -90,9 +90,9 @@ servicesButton.addEventListener("click", (e) => {
   activePage.style.display = "flex";
 });
 
-banner.addEventListener("click", (e) => {
-  banner.style.display = "none";
-});
+// banner.addEventListener("click", (e) => {
+//   banner.style.display = "none";
+// });
 
 // servicesPage.addEventListener("click", (e) => {
 //   if (e.target.parentElement.className.includes("services")) {

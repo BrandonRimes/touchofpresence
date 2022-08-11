@@ -2,7 +2,7 @@ const html = document.documentElement;
 const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
 const footer = document.getElementById("footer");
-// const servicesButton = document.getElementById("servicesButton");
+const servicesButton = document.getElementById("servicesButton");
 const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
@@ -83,13 +83,14 @@ menuPage.addEventListener("click", (e) => {
   };
 });
 
-// servicesButton.addEventListener("click", (e) => {
-//   activePage.style.display = "none";
-//   menuPage.style.display = "none";
-//   menuButton.className = "closed";
-//   activePage = pages["servicesOption"];
-//   activePage.style.display = "flex";
-// });
+servicesButton.addEventListener("click", (e) => {
+  activePage.style.display = "none";
+  menuPage.style.display = "none";
+  menuButton.className = "closed";
+  activePage = pages["servicesOption"];
+  activePage.style.display = "flex";
+  html.scrollTop = 0;
+});
 
 // banner.addEventListener("click", (e) => {
 //   banner.style.display = "none";

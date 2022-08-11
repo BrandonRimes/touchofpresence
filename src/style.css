@@ -148,7 +148,7 @@ body {
 footer {
   position: fixed;
   bottom: 0;
-  height: 12%;
+  height: 12vh;
   width: 100%;
   background-color: #323232d4;
   display: flex;
@@ -304,6 +304,7 @@ p {
   font-size: 2vh;
   padding: 5%;
   margin: 2% 0;
+  text-indent: 5%;
 }
 
 /* HOME PAGE ---------------------------------- */
@@ -704,6 +705,7 @@ p {
 
 .bioEmphasis {
   font-size: 3vh;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   display: block;
+  text-indent: 0%;
 }

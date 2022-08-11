@@ -1,14 +1,15 @@
 const html = document.documentElement;
 const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
-const servicesButton = document.getElementById("servicesButton");
+const footer = document.getElementById("footer");
+// const servicesButton = document.getElementById("servicesButton");
 const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
 const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
-const servicesHeader = document.getElementById("servicesHeader");
+// const servicesHeader = document.getElementById("servicesHeader");
 const connectPage = document.getElementById("connectPage");
 const logo = document.getElementById("logo");
 const mandala = document.getElementById("mandala");
@@ -24,7 +25,7 @@ const touchName = document.getElementById("touchName");
 const ofName = document.getElementById("ofName");
 const presenceName = document.getElementById("presenceName");
 const mapBox = document.getElementById("connectMap");
-const banner = document.getElementById("banner");
+// const banner = document.getElementById("banner");
 
 let serverURL;
 
@@ -82,13 +83,13 @@ menuPage.addEventListener("click", (e) => {
   };
 });
 
-servicesButton.addEventListener("click", (e) => {
-  activePage.style.display = "none";
-  menuPage.style.display = "none";
-  menuButton.className = "closed";
-  activePage = pages["servicesOption"];
-  activePage.style.display = "flex";
-});
+// servicesButton.addEventListener("click", (e) => {
+//   activePage.style.display = "none";
+//   menuPage.style.display = "none";
+//   menuButton.className = "closed";
+//   activePage = pages["servicesOption"];
+//   activePage.style.display = "flex";
+// });
 
 // banner.addEventListener("click", (e) => {
 //   banner.style.display = "none";
@@ -109,6 +110,15 @@ servicesButton.addEventListener("click", (e) => {
 
 window.onscroll = () => {
   let scroll = html.scrollTop;
+
+  
+  if (this.oldScroll < this.scrollY) {
+    footer.style.transform = "translateY(15vh)";
+  } else {
+    footer.style.transform = "translateY(0vh)";
+  }
+
+  this.oldScroll = this.scrollY;
 
   theName.style.transform = `translateY(-${scroll * 1.5}px)`
   theName.style.opacity = `${100 - (scroll / 1)}%`

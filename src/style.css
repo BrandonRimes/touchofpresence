@@ -19,12 +19,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 body {
   width: 100%;
   overflow-x: hidden;
+  color: var(--text-color);
 }
 
 /* header {
@@ -145,6 +146,53 @@ body {
     inset -2px -2px 4px black;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 12%;
+  width: 100%;
+  background-color: #323232d4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* box-shadow: inset 0 0 5px black, inset 0 0 5px 3px white; */
+  transition: transform 0.25s linear;
+}
+
+.footerButtons {
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icons {
+  font-size: 6vh;
+  color: var(--coral);
+  text-shadow: 1px 1px 0px black;
+}
+
+footer h4 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 2.5vh;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px black;
+}
+
+#footerBook {
+  
+}
+
+#footerCall {
+
+}
+
+#footerServices {
+
+}
+
 #banner {
   position: fixed;
   top: 80vh;
@@ -238,6 +286,7 @@ article {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 h3 {
@@ -306,7 +355,7 @@ p {
   right: 0;
   height: 75%;
   width: 100%;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/fe/Oxytocin.png);
+  background-image: url(./img/theOxytocin.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -423,7 +472,7 @@ h2 {
 }
 
 #menuBgImg {
-  background-image: url(https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
+  background-image: url(./img/menuBG.jpg);
 }
 
 #bgFilterMenu {

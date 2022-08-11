@@ -182,6 +182,7 @@ footer {
 footer h4 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 2.5vh;
+  font-weight: lighter;
   letter-spacing: 1px;
   text-shadow: 1px 1px 0px black;
 }

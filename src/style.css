@@ -465,6 +465,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   height: 50vh;
+  margin-bottom: 5rem;
 }
 
 .menuOptions {

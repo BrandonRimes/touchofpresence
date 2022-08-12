@@ -9,7 +9,6 @@ const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
 const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
-// const servicesHeader = document.getElementById("servicesHeader");
 const connectPage = document.getElementById("connectPage");
 const logo = document.getElementById("logo");
 const mandala = document.getElementById("mandala");
@@ -25,7 +24,7 @@ const touchName = document.getElementById("touchName");
 const ofName = document.getElementById("ofName");
 const presenceName = document.getElementById("presenceName");
 const mapBox = document.getElementById("connectMap");
-// const banner = document.getElementById("banner");
+const banner = document.getElementById("banner");
 
 let serverURL;
 
@@ -92,9 +91,9 @@ servicesButton.addEventListener("click", (e) => {
   html.scrollTop = 0;
 });
 
-// banner.addEventListener("click", (e) => {
-//   banner.style.display = "none";
-// });
+banner.addEventListener("click", (e) => {
+  banner.style.display = "none";
+});
 
 // servicesPage.addEventListener("click", (e) => {
 //   if (e.target.parentElement.className.includes("services")) {
@@ -112,11 +111,12 @@ servicesButton.addEventListener("click", (e) => {
 window.onscroll = () => {
   let scroll = html.scrollTop;
 
-  
   if (this.oldScroll < this.scrollY) {
     footer.style.transform = "translateY(15vh)";
+    banner.style.transform = "translateY(-15vh)";
   } else {
     footer.style.transform = "translateY(0vh)";
+    banner.style.transform = "translateY(0vh)";
   }
 
   this.oldScroll = this.scrollY;
@@ -164,10 +164,5 @@ window.onscroll = () => {
   BG.forEach(element => {
     element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;
   });
-  // let servicesHeaderY = servicesHeader.getBoundingClientRect().y;
-  // if (scroll > 0) {
-  //   servicesHeader.classList.add("atTop");
-  // } else {
-  //   servicesHeader.classList.remove("atTop");
-  // };;
+
 };

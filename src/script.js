@@ -112,11 +112,11 @@ window.onscroll = () => {
   let scroll = html.scrollTop;
 
   if (this.oldScroll < this.scrollY) {
-    footer.style.transform = "translateY(15vh)";
-    banner.style.transform = "translateY(-15vh)";
+    footer.style.transform = "translateY(5.5rem)";
+    banner.style.transform = "translateY(-5rem)";
   } else {
-    footer.style.transform = "translateY(0vh)";
-    banner.style.transform = "translateY(0vh)";
+    footer.style.transform = "translateY(0rem)";
+    banner.style.transform = "translateY(0rem)";
   }
 
   this.oldScroll = this.scrollY;

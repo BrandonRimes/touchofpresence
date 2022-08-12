@@ -23,6 +23,7 @@
 }
 
 body {
+  position: relative;
   width: 100%;
   overflow-x: hidden;
   color: var(--text-color);
@@ -120,7 +121,7 @@ body {
 
 footer {
   position: fixed;
-  bottom: 0;
+  bottom: 0%;
   height: 5.5rem;
   width: 100%;
   background-color: #323232d4;
@@ -173,12 +174,12 @@ footer h4 {
 
 #banner {
   position: fixed;
-  bottom: -15vh;
+  bottom: -5rem;
   z-index: 50;
-  height: 10%;
+  height: 5rem;
   width: 100%;
   background-color: #323232d4;
-  padding: 5%;
+  padding: 1rem 1%;
   /* box-shadow: inset 0 0 4px black; */
   font-weight: 100;
   transition: transform 0.25s linear;

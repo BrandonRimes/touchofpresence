@@ -148,7 +148,7 @@ body {
 footer {
   position: fixed;
   bottom: 0;
-  height: 12vh;
+  height: 5.5rem;
   width: 100%;
   background-color: #323232d4;
   display: flex;
@@ -174,14 +174,14 @@ footer {
 }
 
 .icons {
-  font-size: 6vh;
+  font-size: 3rem;
   color: var(--coral);
   text-shadow: 1px 1px 0px black;
 }
 
 footer h4 {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 2.5vh;
+  font-size: 1.25rem;
   font-weight: lighter;
   letter-spacing: 1px;
   text-shadow: 1px 1px 0px black;
@@ -215,14 +215,14 @@ footer h4 {
   box-shadow: inset 0 0 4px black;
 }
 
-#banner h4 {
+/* #banner h4 {
   color: var(--text-color);
   text-align: center;
   letter-spacing: 1px;
-  font-size: 2vh;
-}
+  font-size: 1.5rem;
+} */
 
-#bannerButton {
+/* #bannerButton {
   position: absolute;
   top: 10%;
   right: 2%;
@@ -232,7 +232,7 @@ footer h4 {
   border-radius: 50%;
   text-align: center;
   font-weight: bolder;
-}
+} */
 
 .pages {
   width: 100vw;
@@ -244,7 +244,8 @@ footer h4 {
   height: 100vh;
   width: 100%;
   color: white;
-  font-size: 6vh;
+  font-size: 4rem;
+  font-weight: bolder;
   text-shadow: 1px 1px 1px var(--text-color);
   display: flex;
   flex-direction: column;
@@ -301,8 +302,8 @@ h3 {
 }
 
 p {
-  font-size: 2vh;
-  padding: 5%;
+  font-size: 1rem;
+  padding: 0 5%;
   margin: 2% 0;
   text-indent: 5%;
 }
@@ -438,7 +439,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: var(--font);
-  letter-spacing: 0.2rem;
+  letter-spacing: 2px;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.75);
 }
 
@@ -472,6 +473,7 @@ h2 {
 .menuOptions {
   /* color: white; */
   font-size: 2rem;
+  font-weight: bolder;
 }
 
 #bgMenu {
@@ -565,20 +567,15 @@ h2 {
 }
 
 .serviceTitle {
-  font-size: 4vh;
+  font-size: 2rem;
   margin: 3vh 0;
 }
 
 .services h3 {
   text-align: left;
   padding: 3vh 5%;
-  font-size: 2.5vh;
-  letter-spacing: 2px;
-}
-
-p {
-  font-size: 2vh;
-  padding: 0 5%;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
 }
 
 .servicesSection {
@@ -648,7 +645,7 @@ p {
 }
 
 .aboutEmphasis {
-  font-size: 3vh;
+  font-size: 1.5rem;
   letter-spacing: 2px;
   display: block;
   text-indent: 0%;
@@ -695,17 +692,18 @@ p {
 }
 
 .tribeNames {
-  font-size: 4vh;
+  font-size: 2.5rem;
+  font-weight: lighter;
   margin: 3vh 0;
 }
 
 .tribeTitles {
-  font-size: 3vh;
+  font-size: 1.5rem;
   margin: 2.5vh;
 }
 
 .bioEmphasis {
-  font-size: 3vh;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   display: block;
   text-indent: 0%;

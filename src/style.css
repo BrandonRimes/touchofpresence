@@ -240,6 +240,7 @@ footer h4 {
 .pageHeader {
   height: 100vh;
   width: 100%;
+  padding-bottom: 5rem;
   color: white;
   font-size: 4rem;
   font-weight: bolder;

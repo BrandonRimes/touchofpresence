@@ -160,6 +160,34 @@ footer h4 {
   text-shadow: 1px 1px 0px black;
 }
 
+.CTA {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  height: 1rem;
+  width: 1rem;
+  border-left: 3px solid var(--coral);
+  border-bottom: 3px solid var(--coral);
+  animation: cta .5s ease-in infinite alternate;
+  box-shadow: -1px 1px 0px black;
+}
+
+@keyframes cta {
+  0% {
+    transform: translateY(-0.5rem) translateX(-50%) rotate(-45deg);
+    border-radius: 0% 0%;
+  }
+
+  50% {
+    border-radius: 0% 0%;
+  }
+
+  100% {
+    transform: translateY(0rem) translateX(-50%) rotate(-45deg);
+    border-radius: 0% 50%;
+  }
+}
+
 #footerBook {
   
 }
@@ -279,6 +307,8 @@ footer h4 {
   height: 100vh;
 }
 
+/* SEMANTICS -------------------- */
+
 article {
   width: 100%;
   display: flex;
@@ -301,9 +331,10 @@ h3 {
 
 p {
   font-size: 1rem;
-  padding: 0 5%;
-  margin: 2% 0;
-  text-indent: 5%;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+  text-indent: 1rem;
+  max-width: 500px;
 }
 
 /* HOME PAGE ---------------------------------- */
@@ -515,21 +546,9 @@ h2 {
   background-image: url(https://ucarecdn.com/31f385dc-8e61-4613-9057-5eeb4cfc640d/-/preview/-/quality/smart/);
 }
 
-/* #serviceBgImg2 {
-  margin-top: 25%;
-  height: 56%;
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/26d43f6b-5d2c-4e08-9389-2ef11770c324/robina-weermeijer-IHfOpAzzjHM-unsplash.jpg);
-} */
-
 #begIntImg {
   background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/26d43f6b-5d2c-4e08-9389-2ef11770c324/robina-weermeijer-IHfOpAzzjHM-unsplash.jpg);
 }
-
-/* #serviceBgImg3 {
-  margin-top: 15%;
-  height: 50%;
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639701644010-GFARKYHIS2LH4JMA5HD2/unsplash-image-NqCK_XkrtCY.jpg);
-} */
 
 #advIntImg {
   background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639701644010-GFARKYHIS2LH4JMA5HD2/unsplash-image-NqCK_XkrtCY.jpg);
@@ -541,16 +560,6 @@ h2 {
   /* background-position: top; */
   background-image: url(https://ucarecdn.com/82d13c71-7365-4631-b26f-5dac54e75f4e/-/preview/400x1000/-/quality/smart/);
 }
-
-/* #myoImg {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/e3481db9-1d1e-4801-95a0-a5b48cc02cba/image-asset.jpg);
-} */
-
-/* #serviceBgImg5 {
-  margin-top: 15%;
-  height: 50%;
-  background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639702412707-TL26C4FXGJ0IHZSFXUC5/GettyImages-454998377.jpg);
-} */
 
 #ashiatsuImg {
   background-image: url(https://images.squarespace-cdn.com/content/v1/61b9fec969528d5048b84bbd/1639702412707-TL26C4FXGJ0IHZSFXUC5/GettyImages-454998377.jpg);
@@ -656,10 +665,6 @@ h2 {
 #connectMap {
   width: 100vw;
   height: 33vh;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* background-color: #fe8b8f81; */
   margin-bottom: 15%;
 }
 
@@ -736,4 +741,20 @@ h2 {
   letter-spacing: 1px;
   display: block;
   text-indent: 0%;
+}
+
+
+@media (min-width: 1000px) {
+
+  #servicesPage {
+
+  }
+
+  /* .services {
+    width: 25%;
+  }
+
+  .serviceImg {
+    width: 25%;
+  } */
 }

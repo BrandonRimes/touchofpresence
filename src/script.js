@@ -25,6 +25,7 @@ const ofName = document.getElementById("ofName");
 const presenceName = document.getElementById("presenceName");
 const mapBox = document.getElementById("connectMap");
 const banner = document.getElementById("banner");
+const cta = document.querySelector(".CTA");
 
 let serverURL;
 
@@ -71,6 +72,8 @@ menuButton.addEventListener("click", (e) => {
   activePage.style.display == "none" ?
     activePage.style.display = "flex" :
     activePage.style.display = "none";
+
+  ctaDisplay();
 });
 
 menuPage.addEventListener("click", (e) => {
@@ -79,6 +82,7 @@ menuPage.addEventListener("click", (e) => {
     menuPage.style.display = "none";
     activePage = pages[e.target.id];
     activePage.style.display = "flex";
+    ctaDisplay();
   };
 });
 
@@ -89,11 +93,21 @@ servicesButton.addEventListener("click", (e) => {
   activePage = pages["servicesOption"];
   activePage.style.display = "flex";
   html.scrollTop = 0;
+  ctaDisplay();
 });
 
 banner.addEventListener("click", (e) => {
   banner.style.display = "none";
 });
+
+const ctaDisplay = () => {
+  if (menuPage.style.display == "flex") {
+    cta.style.display = "none";
+  } else {
+    cta.style.display = "block";
+  }
+}
+
 
 // servicesPage.addEventListener("click", (e) => {
 //   if (e.target.parentElement.className.includes("services")) {

@@ -540,7 +540,7 @@ h2 {
   margin-top: 100%;
   height: 100%;
   /* background-position: top; */
-  background-image: url(https://ucarecdn.com/82d13c71-7365-4631-b26f-5dac54e75f4e/-/preview/-/quality/smart/);
+  background-image: url(https://ucarecdn.com/82d13c71-7365-4631-b26f-5dac54e75f4e/-/preview/400x1000/-/quality/smart/);
 }
 
 /* #myoImg {
@@ -596,32 +596,63 @@ h2 {
   background-image: url(https://ucarecdn.com/ea2aaefe-028b-4d46-b881-612600ed87cc/-/preview/-/quality/smart/);
 }
 
+#connectPage article {
+  padding: 0;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.connectSections {
+  width: 100%;
+  margin: 3% 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  padding: 1rem 2%;
+}
+
+#phoneSection {
+  margin-top: 0;
+}
+
 #connectPage h3 {
-  max-width: 95%;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+#connectPage h4 {
+  font-family: var(--font);
   font-size: 1.5rem;
-  line-height: 125%;
-  /* letter-spacing: 2px; */
-  margin-bottom: 10%;
+  text-align: center;
 }
 
 .calltext {
-  display: inline-block;
-  height: 4vh;
-  width: 8vh;
+  /* display: inline-block;
+  height: 2.5rem;
+  width: 4.5rem;
   text-align: center;
-  border-radius: 10px;
-  
+  padding: 2% 0;
+  border-radius: 10px; */
+  color: var(--coral);
+  font-weight: bolder;
+  /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); */
 }
 
-#phoneCall {
+/* #phoneCall {
   box-shadow: inset -2px 2px 4px white,
-    inset 2px -2px 4px rgba(0, 0, 0, 0.5);
-}
+  inset 2px -2px 4px rgba(0, 0, 0, 0.5);
+} */
 
-#phoneText {
+/* #phoneText {
   box-shadow: inset 2px 2px 4px white,
-    inset -2px -2px 4px rgba(0, 0, 0, 0.5);
-}
+  inset -2px -2px 4px rgba(0, 0, 0, 0.5);
+} */
+
+/* .connectEmphasis {
+  font-size: 1.75rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+} */
 
 #connectMap {
   width: 100vw;

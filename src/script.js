@@ -125,7 +125,7 @@ const ctaDisplay = () => {
 window.onscroll = () => {
   let scroll = html.scrollTop;
 
-  if (this.oldScroll < this.scrollY) {
+  if (this.oldScroll < this.scrollY && scroll > 1) {
     footer.style.transform = "translateY(5.5rem)";
     banner.style.transform = "translateY(-5rem)";
   } else {

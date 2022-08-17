@@ -688,7 +688,7 @@ h2 {
 /* TRIBE PAGE ---------------------------------- */
 
 #tribeBgImg1 {
-  background-image: url(https://ucarecdn.com/e22321b8-c0ed-434a-9272-39e753faaead/-/preview/-/quality/smart/);
+  background-image: url(https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
 }
 
 .tribeImages {
@@ -698,8 +698,8 @@ h2 {
   background-repeat: no-repeat;
   height: 40vh;
   width: 40vh;
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
 /* .tribeImages::after {

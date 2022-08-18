@@ -2,6 +2,7 @@ const html = document.documentElement;
 const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
 const footer = document.getElementById("footer");
+const bookButton =document.getElementById("footerBook");
 const servicesButton = document.getElementById("servicesButton");
 const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
@@ -10,6 +11,7 @@ const tribePage = document.getElementById("tribePage");
 const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
 const connectPage = document.getElementById("connectPage");
+const bookPage = document.getElementById("bookPage");
 const logo = document.getElementById("logo");
 const mandala = document.getElementById("mandala");
 const oxytocin = document.getElementById("oxytocin");
@@ -53,7 +55,8 @@ const pages = {
   "aboutOption": aboutPage,
   "tribeOption": tribePage,
   "servicesOption": servicesPage,
-  "connectOption": connectPage
+  "connectOption": connectPage,
+  "bookOption": bookPage
 };
 
 const toggleMenuButton = () => {
@@ -86,6 +89,16 @@ menuPage.addEventListener("click", (e) => {
   };
 });
 
+bookButton.addEventListener("click", (e) => {
+  activePage.style.display = "none";
+  menuPage.style.display = "none";
+  menuButton.className = "closed";
+  activePage = pages["bookOption"];
+  activePage.style.display = "flex";
+  html.scrollTop = 0;
+  ctaDisplay();
+});
+
 servicesButton.addEventListener("click", (e) => {
   activePage.style.display = "none";
   menuPage.style.display = "none";
@@ -108,6 +121,16 @@ const ctaDisplay = () => {
   }
 }
 
+window.onload = function() {
+  const mBook = document.getElementById("mBook");
+  const element = mBook.contentWindow.document.getElementById("central-phrase");
+  element.style.color = "black";
+  // if (mBook && mBook.contentWindow) {
+  //   mBook.contentWindow.postMessage(, "*");
+  // }
+  // let doc = mBook.contentDocument;
+  // doc.body.innerHTML = doc.body.innerHTML + '<style>h2 {color:black;}</style>';
+}
 
 // servicesPage.addEventListener("click", (e) => {
 //   if (e.target.parentElement.className.includes("services")) {

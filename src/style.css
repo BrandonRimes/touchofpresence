@@ -481,8 +481,13 @@ h2 {
 #aboutPage,
 #tribePage,
 #servicesPage,
-#connectPage {
+#connectPage,
+#bookPage {
   display: none;
+}
+
+#bookPage {
+  padding-top: 10vh;
 }
 
 #menuPage {
@@ -743,6 +748,12 @@ h2 {
   text-indent: 0%;
 }
 
+#mBook {
+  color: black;
+}
+#mBook h2 {
+  color: black;
+}
 
 @media (min-width: 1000px) {
 

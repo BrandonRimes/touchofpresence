@@ -89,6 +89,7 @@ menuPage.addEventListener("click", (e) => {
     activePage.style.display = "none";
     activePage = pages[e.target.id];
     activePage.style.display = "flex";
+    html.scrollTop = 0;
     ctaDisplay();
   };
 });

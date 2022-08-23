@@ -10,6 +10,7 @@ const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
 const servicesPage = document.getElementById("servicesPage");
 const services = document.querySelectorAll(".services");
+const serviceImg = document.querySelectorAll(".serviceImg");
 const connectPage = document.getElementById("connectPage");
 const bookPage = document.getElementById("bookPage");
 const logo = document.getElementById("logo");
@@ -204,5 +205,11 @@ window.onscroll = () => {
   BG.forEach(element => {
     element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;
   });
+
+  if (window.innerWidth > 1000) {
+    serviceImg.forEach(element => {
+      element.style.transform = `translateY(-${scroll / 2}px)`;
+    });
+  }
 
 };

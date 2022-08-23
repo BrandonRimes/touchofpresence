@@ -1,5 +1,6 @@
 :root {
   --coral: #fe8b8f;
+  --coral-highlight: #fbb8ba;
   --border: 1px solid deeppink;
   --main-background: rgba(255, 255, 255, 0.5);
   --text-background: rgba(255, 255, 255, 0.75);
@@ -42,6 +43,7 @@ body {
   top: 0;
   height: 5rem;
   width: 5rem;
+  margin: 0.25rem;
 }
 
 #cornerLogo {
@@ -49,18 +51,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
   z-index: 100;
 }
 
 #cornerMandala,
 #cornerOxytocin {
   position: absolute;
-  height: 75%;
-  width: 75%;
+  height: 90%;
+  width: 90%;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  /* filter: drop-shadow(1px 1px white); */
 }
 
 #cornerMandala {
@@ -134,7 +137,7 @@ footer {
 
 .footerButtons {
   height: 90%;
-  width: 25%;
+  width: 20%;
 }
 
 .footerBoxes {
@@ -230,8 +233,6 @@ footer h4 {
   width: 2.5vh;
   border: 1px solid var(--coral);
   border-radius: 50%;
-  /* background: linear-gradient(to bottom right, transparent 47%, var(--coral) 47% 53%, transparent 53%), linear-gradient(to bottom left, transparent 47%, var(--coral) 47% 53%, transparent 53%);
-  box-shadow: inset 0px 0px 0px 3px #323232d4; */
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -263,6 +264,7 @@ footer h4 {
   width: 100vw;
   min-height: 100vh;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .pageHeader {
@@ -375,32 +377,29 @@ p {
   clip-path: polygon(100% 100%, 88% 98%, 84% 99%, 75% 100%, 68% 99%, 57% 99.5%, 51% 96.5%, 49% 96.5%, 46.5% 97.5%, 39% 94.5%, 35% 95%, 27.5% 92%, 24% 93%, 21% 93.5%, 19% 94.5%, 16% 94%, 6% 95%, 0% 94.5%, 0% 0%, 100% 0%);
 }
 
-#mandala {
-  position: absolute;
-  top: 10%;
-  height: 40vh;
-  width: 40vh;
-  background-image: url(https://ucarecdn.com/341be368-45ba-460e-9293-cef31b2f49ca/-/preview/-/quality/smart/);
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
+#mandala,
 #oxytocin {
   position: absolute;
   top: 10%;
   height: 40vh;
   width: 40vh;
-  background-image: url(https://ucarecdn.com/b5147c16-61f0-4654-ac7c-494e1c638c91/-/preview/-/quality/smart/);
-  background-position: center;
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
+}
+
+#mandala {
+  background-image: url(https://ucarecdn.com/341be368-45ba-460e-9293-cef31b2f49ca/-/preview/-/quality/smart/);
+}
+
+#oxytocin {
+  background-image: url(https://ucarecdn.com/b5147c16-61f0-4654-ac7c-494e1c638c91/-/preview/-/quality/smart/);
   filter: drop-shadow(0px 0.5px var(--text-color))
           drop-shadow(0.5px 0px var(--text-color));
 }
 
 h1 {
-  width: 90%;
+  width: 18rem;
   position: fixed;
   top: 60vh;
   left: 50%;
@@ -408,7 +407,6 @@ h1 {
   text-align: center;
   font-size: 3rem;
   font-family: var(--font);
-  /* letter-spacing: 0.2rem; */
 }
 
 .nameSpan {
@@ -496,6 +494,14 @@ h2 {
   justify-content: center;
 }
 
+#bgMenu {
+  top: 0;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
 #optionBox {
   display: flex;
   flex-direction: column;
@@ -505,13 +511,12 @@ h2 {
 }
 
 .menuOptions {
-  /* color: white; */
   font-size: 2rem;
   font-weight: bolder;
 }
 
 #bgMenu {
-  
+  position: absolute;
 }
 
 #menuBgImg {
@@ -701,25 +706,26 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 40vh;
-  width: 40vh;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  height: 33vh;
+  width: 33vh;
+  border-radius: 0%;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75); */
 }
 
-/* .tribeImages::after {
-  content: "";
-  position: absolute;
-  height: 80%;
-  width: 80%;
-  top: 50%;
+.tribeImageFrames {
+  height: 50vh;
+  width: 50vh;
+  /* top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  border-radius: inherit;
-  /* border-top: 15px solid rgba(255, 255, 255, 0.5);
-  box-shadow: inset -5px 5px 5px rgba(255, 255, 255, 0.25),
-                    5px -5px 5px rgba(255, 255, 255, 0.25);
-} */
+  transform: translateX(-50%) translateY(-50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://ucarecdn.com/341be368-45ba-460e-9293-cef31b2f49ca/-/preview/-/quality/smart/);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 #ildikoImg {
   background-image: url(https://ucarecdn.com/4e233dd5-71a7-431b-924e-85821dd3d9b6/-/preview/-/quality/smart/);
@@ -756,6 +762,205 @@ h2 {
 }
 
 @media (min-width: 1000px) {
+
+  #cornerLogo,
+  #menuButton {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  #cornerMandala::before,
+  #cornerMandala::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: inherit;
+    background-position: inherit;
+    background-size: inherit;
+    background-repeat: inherit;
+  }
+
+  #cornerMandala {
+    height: 6.75rem;
+    width: 6.75rem;
+  }
+
+  #cornerMandala::before {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  #cornerMandala::after {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+
+  #menuButton:hover #menuButtonLine {
+    box-shadow: -1px 1px 0px rgba(255, 255, 255, 0.75),
+    1px -1px 0px rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+  }
+
+  #cornerLogo:hover #cornerMandala {
+    animation: fractal 1s linear infinite;
+    /* filter: drop-shadow(0px 0px 1px var(--coral)); */
+  }
+
+  @keyframes fractal {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(3);
+    }
+  }
+
+  #mandala,
+  #oxytocin {
+    height: 45vh;
+    width: 45vh;
+  }
+
+  h1 {
+    width: 50rem;
+    font-size: 4rem;
+    top: 65vh;
+    letter-spacing: 2px;
+    pointer-events: none;
+  }
+
+  .motto {
+    pointer-events: none;
+  }
+
+  #integrateMotto {
+    top: 45vh;
+    justify-content: space-evenly;
+  }
+
+  #integrateMotto span {
+    font-size: 7rem;
+  }
+
+  #integrateMotto #integrateI {
+    text-shadow: 4px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateN {
+    text-shadow: 3px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateT1 {
+    text-shadow: 2px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateE1 {
+    text-shadow: 1px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateG {
+    text-shadow: 0px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateR {
+    text-shadow: -1px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateA {
+    text-shadow: -2px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateT2 {
+    text-shadow: -3px -2px 1px var(--coral);
+  }
+
+  #integrateMotto #integrateE2 {
+    text-shadow: -4px -2px 1px var(--coral);
+  }
+
+  #footer {
+    padding: 0 20%;
+  }
+
+  .footerButtons {
+    width: 8%;
+    cursor: pointer;
+  }
+
+  .footerButtons:hover .icons {
+    text-shadow: 2px 2px 0px black, -1px -1px 0px var(--coral-highlight);
+  }
+
+  .footerButtons:hover h4 {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  #banner h4 {
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+  
+  #bannerButton {
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 3vh;
+    width: 3vh;
+    cursor: pointer;
+  }
+
+  .pageHeader {
+    pointer-events: none;
+  }
+
+  #menuPage {
+    position: fixed;
+    width: 20vw;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 5px black;
+  }
+
+  #menuButton,
+  .menuOptions {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .menuOptions {
+    position: relative;
+  }
+
+  .menuOptions::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    height: 3px;
+    width: 0%;
+    /* background: linear-gradient(to bottom, white, transparent); */
+    background-color: white;
+    transition: inherit;
+  }
+
+  .menuOptions:hover {
+    /* transform: scale(1.1); */
+    color: black;
+    /* text-shadow: 5px 0px 0 white; */
+  }
+
+  .menuOptions:hover::after {
+    width: 100%;
+  }
+
+  .tribeImageFrames:hover {
+    filter: drop-shadow(0px 0px 1px var(--coral));
+  }
 
   #servicesPage {
 

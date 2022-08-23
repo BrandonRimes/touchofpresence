@@ -72,9 +72,11 @@ menuButton.addEventListener("click", (e) => {
     menuPage.style.display = "none" :
     menuPage.style.display = "flex";
 
-  activePage.style.display == "none" ?
-    activePage.style.display = "flex" :
-    activePage.style.display = "none";
+  if (window.innerWidth < 1000) {
+    activePage.style.display == "none" ?
+      activePage.style.display = "flex" :
+      activePage.style.display = "none";
+  }
 
   ctaDisplay();
 });
@@ -83,6 +85,7 @@ menuPage.addEventListener("click", (e) => {
   if (e.target.id in pages) {
     toggleMenuButton();
     menuPage.style.display = "none";
+    activePage.style.display = "none";
     activePage = pages[e.target.id];
     activePage.style.display = "flex";
     ctaDisplay();

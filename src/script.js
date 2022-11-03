@@ -14,6 +14,7 @@ const serviceImg = document.querySelectorAll(".serviceImg");
 const connectPage = document.getElementById("connectPage");
 const bookPage = document.getElementById("bookPage");
 const logo = document.getElementById("logo");
+const cornerLogo = document.getElementById("cornerLogo");
 const mandala = document.getElementById("mandala");
 const oxytocin = document.getElementById("oxytocin");
 const motto = document.querySelectorAll(".motto");
@@ -125,6 +126,16 @@ const ctaDisplay = () => {
     cta.style.display = "block";
   }
 }
+
+cornerLogo.addEventListener("click", (e) => {
+  activePage.style.display = "none";
+  menuPage.style.display = "none";
+  menuButton.className = "closed";
+  activePage = pages["homeOption"];
+  activePage.style.display = "flex";
+  html.scrollTop = 0;
+  ctaDisplay();
+});
 
 window.onload = function() {
   const mBook = document.getElementById("mBook");

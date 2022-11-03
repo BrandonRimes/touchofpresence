@@ -691,7 +691,8 @@ h2 {
 }
 
 #aboutPage .pageHeader {
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
+  padding-right: 2.5rem;
 }
 
 .aboutEmphasis {

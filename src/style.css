@@ -278,6 +278,7 @@ footer h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: translate3d(0,0,0);
   mix-blend-mode: difference;
 }
 

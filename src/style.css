@@ -681,11 +681,17 @@ h2 {
 /* ABOUT PAGE ---------------------------------- */
 
 #aboutBgImg1 {
-  background-image: url(https://ucarecdn.com/1e04751c-8304-41e9-98fa-4ae32294d0b3/-/preview/-/quality/smart/);
+  background-image: url(../IMG_20221103_093415.jpg);
 }
+
+/* https://ucarecdn.com/1e04751c-8304-41e9-98fa-4ae32294d0b3/-/preview/-/quality/smart/ */
 
 #aboutPage article {
   padding-bottom: 10vh;
+}
+
+#aboutPage .pageHeader {
+  padding-bottom: 5rem;
 }
 
 .aboutEmphasis {

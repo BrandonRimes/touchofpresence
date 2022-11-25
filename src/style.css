@@ -473,9 +473,52 @@ h2 {
 }
 
 #scroll {
-  height: 200vh;
+  height: 150vh;
   width: 100%;
   background: transparent;
+}
+
+#homeContent {
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  /* border: 1px solid var(--coral); */
+  box-shadow: 0px 0px 10px var(--text-color);
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 1rem;
+}
+
+#homeContent * {
+  margin-top: 1.5rem;
+}
+
+#homeContent hr {
+  border: 1px solid var(--coral);
+}
+
+#bodyworks {
+  margin-top: 0;
+}
+
+.bodyworks {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+#homeContact {
+  padding: 1rem;
+}
+
+#homeContact * {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-indent: unset;
+  text-align: center;
 }
 
 #menuPage,
@@ -980,6 +1023,14 @@ h2 {
 
   .pageHeader {
     pointer-events: none;
+  }
+
+  #homeContent {
+    align-items: center;
+  }
+
+  #homeContent hr {
+    width: 66vw;
   }
 
   #menuPage {

@@ -3,14 +3,14 @@ const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
 const footer = document.getElementById("footer");
 const bookButton =document.getElementById("footerBook");
-const servicesButton = document.getElementById("servicesButton");
+// const servicesButton = document.getElementById("servicesButton");
 const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
-const servicesPage = document.getElementById("servicesPage");
-const services = document.querySelectorAll(".services");
-const serviceImg = document.querySelectorAll(".serviceImg");
+// const servicesPage = document.getElementById("servicesPage");
+// const services = document.querySelectorAll(".services");
+// const serviceImg = document.querySelectorAll(".serviceImg");
 const connectPage = document.getElementById("connectPage");
 const bookPage = document.getElementById("bookPage");
 const logo = document.getElementById("logo");
@@ -105,15 +105,15 @@ bookButton.addEventListener("click", (e) => {
   ctaDisplay();
 });
 
-servicesButton.addEventListener("click", (e) => {
-  activePage.style.display = "none";
-  menuPage.style.display = "none";
-  menuButton.className = "closed";
-  activePage = pages["servicesOption"];
-  activePage.style.display = "flex";
-  html.scrollTop = 0;
-  ctaDisplay();
-});
+// servicesButton.addEventListener("click", (e) => {
+//   activePage.style.display = "none";
+//   menuPage.style.display = "none";
+//   menuButton.className = "closed";
+//   activePage = pages["servicesOption"];
+//   activePage.style.display = "flex";
+//   html.scrollTop = 0;
+//   ctaDisplay();
+// });
 
 banner.addEventListener("click", (e) => {
   banner.style.display = "none";

@@ -479,7 +479,7 @@ h2 {
 }
 
 #homeContent {
-  height: 115vh;
+  height: 175vh;
   width: 100%;
   background: rgba(255, 255, 255, 1);
   /* border: 1px solid var(--coral); */
@@ -491,21 +491,48 @@ h2 {
   padding: 1rem;
 }
 
+.homeContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #homeContent * {
   margin-top: 1.5rem;
 }
 
 #homeContent hr {
   border: 1px solid var(--coral);
+  background-color: var(--coral);
+}
+
+#neuroIntImg,
+#bodyworkImg {
+  height: 25vh;
+  width: 90vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 5px var(--text-color);
+  margin: 0;
+}
+
+#neuroIntImg {
+  background-image: url("https://ucarecdn.com/98accf71-2c2a-4301-9a25-a06ecd095ad4/-/preview/-/quality/smart/-/format/auto/");
 }
 
 #bodyworks {
+  width: 100%;
   margin-top: 0;
 }
 
 .bodyworks {
   text-align: left;
   padding-left: 1rem;
+}
+
+#bodyworkImg {
+  background-image: url("https://ucarecdn.com/9ee841f0-7cfa-4b26-ba24-86e916a3e306/-/preview/-/quality/smart/-/format/auto/");
 }
 
 #homeContact {
@@ -1028,6 +1055,26 @@ h2 {
   #homeContent {
     align-items: center;
   }
+
+  .homeContents {
+    width: 66vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #neuroIntText {
+    width: 48%;
+  }
+
+  #bodyworks {
+    width: 48%;
+  }
+
+  #neuroIntImg,
+  #bodyworkImg {
+    height: 33vh;
+    width: 48%;
+  } 
 
   #homeContent hr {
     width: 66vw;

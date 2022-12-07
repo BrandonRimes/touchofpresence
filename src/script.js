@@ -215,7 +215,7 @@ window.onscroll = () => {
   oxytocin.style.transform = `translateY(${scroll / 1}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 
-  bodyworkImgBox.style.transform = `translateY(-${(scroll * 1.3) - scroll - 250}px)`;
+  bodyworkImgBox.style.transform = `translateY(-${(scroll * 1.3) - scroll - 300}px)`;
 
   BG.forEach(element => {
     element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;

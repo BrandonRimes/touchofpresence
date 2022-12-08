@@ -1121,7 +1121,7 @@ h2 {
     position: fixed;
     width: 20vw;
     right: 0;
-    z-index: 10;
+    z-index: 30;
     box-shadow: 0px 0px 5px black;
   }
 

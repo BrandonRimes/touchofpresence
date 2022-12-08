@@ -4,7 +4,7 @@ const menuButton = document.getElementById("menuButton");
 const footer = document.getElementById("footer");
 const bookButton =document.getElementById("footerBook");
 // const servicesButton = document.getElementById("servicesButton");
-const BG = document.querySelectorAll(".bg");
+// const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
@@ -217,14 +217,14 @@ window.onscroll = () => {
 
   bodyworkImg.style.transform = `translateY(${(scroll * 1.3) - scroll - 300}px)`; //(scroll * 1.3) - scroll - 350
 
-  BG.forEach(element => {
-    element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;
-  });
+  // BG.forEach(element => {
+  //   element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;
+  // });
 
-  if (window.innerWidth > 1000) {
-    serviceImg.forEach(element => {
-      element.style.transform = `translateY(-${scroll / 2}px)`;
-    });
-  }
+  // if (window.innerWidth > 1000) {
+  //   serviceImg.forEach(element => {
+  //     element.style.transform = `translateY(-${scroll / 2}px)`;
+  //   });
+  // }
 
 };

@@ -548,7 +548,7 @@ h2 {
 
 #bodyworkImg {
   position: absolute;
-  top: 105rem;
+  top: 110rem;
   height: 50vh;
   width: 100vw;
   z-index: -1;
@@ -793,9 +793,14 @@ h2 {
   padding-right: 2.5rem;
 }
 
+#aboutTag {
+  font-size: 1.33rem;
+  margin: 1rem 0;
+}
+
 .aboutEmphasis {
   font-size: 1.5rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   display: block;
   text-indent: 0%;
 }
@@ -803,7 +808,7 @@ h2 {
 /* TRIBE PAGE ---------------------------------- */
 
 #tribeBgImg1 {
-  background-image: url(https://ucarecdn.com/6dfae964-7a54-4653-96c7-8f5a7139ea32/-/preview/-/quality/smart/);
+  background-image: url(https://ucarecdn.com/aad92bd7-241a-4d25-ac41-abd2c113b603/-/preview/-/quality/smart/-/format/auto/);
 }
 
 .tribeImages {
@@ -821,9 +826,6 @@ h2 {
   position: relative;
   height: 50vh;
   width: 50vh;
-  /* top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -832,6 +834,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 2rem;
 }
 
 #ildikoImg {
@@ -840,21 +843,21 @@ h2 {
 
 #tribePage article {
   background-color: rgb(255, 255, 255);
-  padding-bottom: 10vh;
+  padding: 10vh 0;
 }
 
 .tribeNames {
   position: absolute;
-  top: -1rem;
-  left: 2rem;
+  top: -3rem;
+  left: 4rem;
   font-size: 2.5rem;
   font-weight: lighter;
 }
 
 .tribeTitles {
   position: absolute;
-  bottom: 0;
-  right: 2rem;
+  bottom: -1rem;
+  right: 4rem;
   font-size: 1.5rem;
 }
 
@@ -1094,7 +1097,6 @@ h2 {
   }
 
   #neuroIntText {
-    width: 45%;
     padding: 0;
   }
   
@@ -1112,7 +1114,7 @@ h2 {
   }
 
   #bodyworkImg {
-    top: 200vh;
+    top: 180vh;
     height: 50rem;
     background-size: contain;
   }

@@ -548,7 +548,7 @@ h2 {
 
 #bodyworkImg {
   position: absolute;
-  top: 110rem;
+  top: 115rem;
   height: 50vh;
   width: 100vw;
   z-index: -1;
@@ -798,11 +798,18 @@ h2 {
   margin: 1rem 0;
 }
 
-.aboutEmphasis {
+.aboutEmphasis,
+.bioEmphasis {
   font-size: 1.5rem;
   letter-spacing: 1px;
   display: block;
   text-indent: 0%;
+  color: var(--coral);
+  border-right: 1px solid var(--coral);
+  border-bottom: 1px solid var(--coral);
+  border-radius: 0 0 7px 0;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* TRIBE PAGE ---------------------------------- */
@@ -861,12 +868,12 @@ h2 {
   font-size: 1.5rem;
 }
 
-.bioEmphasis {
+/* .bioEmphasis {
   font-size: 1.5rem;
   letter-spacing: 1px;
   display: block;
   text-indent: 0%;
-}
+} */
 
 #mBook {
   color: black;

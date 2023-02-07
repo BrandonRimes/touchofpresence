@@ -236,7 +236,7 @@ window.onscroll = () => {
       others.forEach(other => {
         other.style.color = "black"
       });
-      answer.scrollIntoView({behavior: "smooth"});
+      answer.scrollIntoView({behavior: "smooth", block: "center"});
       answer.style.color = "var(--coral)";
     }
   });

@@ -775,6 +775,8 @@ h2 {
 #connectMap {
   width: 100vw;
   height: 33vh;
+  padding-bottom: 10vh;
+  background-color: white;
 }
 
 /* ABOUT PAGE ---------------------------------- */
@@ -1310,8 +1312,6 @@ h2 {
   #connectMap {
     height: 80vh;
     /* width: 80vw; */
-    padding-bottom: 10vh;
-    background-color: white;
   }
 
   .faqQuestion:hover {

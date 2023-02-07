@@ -895,7 +895,7 @@ h2 {
   color: var(--coral);
 }
 
-#faqQuestions h3 {
+.faqQuestion {
   padding: 0.5rem;
   text-align: left;
 }
@@ -907,12 +907,10 @@ h2 {
   width: 95%;
 }
 
-#faqAnswers {
-  
-}
-
-#faqAnswers h4 {
+.faqAnswer {
+  text-align: left;
   padding: 0.5rem 1rem;
+  color: black;
 }
 
 @media (min-width: 1000px) {
@@ -1317,6 +1315,27 @@ h2 {
     padding: 0 10vw;
     margin-bottom: 6%;
     background-color: white;
+  }
+
+  .faqQuestion:hover {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .faqQuestion::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--coral);
+    transition: width 1s linear;
+  }
+
+  .faqQuestion:hover::after {
+    width: 100%;
+    transition: width 0.5s linear;
   }
 
 }

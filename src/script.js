@@ -232,7 +232,12 @@ window.onscroll = () => {
   faqQuestions.addEventListener("click", (e) => {
     if (e.target.id in faqs) {
       let answer = document.getElementById(faqs[e.target.id]);
+      let others = document.querySelectorAll(".faqAnswer");
+      others.forEach(other => {
+        other.style.color = "black"
+      });
       answer.scrollIntoView({behavior: "smooth"});
+      answer.style.color = "var(--coral)";
     }
   });
 

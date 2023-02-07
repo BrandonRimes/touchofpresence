@@ -579,7 +579,8 @@ h2 {
 #tribePage,
 #servicesPage,
 #connectPage,
-#bookPage {
+#bookPage,
+#faqPage {
   display: none;
 }
 
@@ -715,6 +716,7 @@ h2 {
 #connectPage article {
   padding-top: 0;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
+  padding-bottom: 10vh;
 }
 
 .connectSections {
@@ -774,6 +776,7 @@ h2 {
   width: 100vw;
   height: 33vh;
   margin-bottom: 15%;
+  background-color: white;
 }
 
 /* ABOUT PAGE ---------------------------------- */
@@ -880,6 +883,36 @@ h2 {
 }
 #mBook h2 {
   color: black;
+}
+
+/* FAQ PAGE ---------------------------- */
+
+#faqPage article {
+  padding-bottom: 12vh;
+}
+
+#faqQuestions {
+  color: var(--coral);
+}
+
+#faqQuestions h3 {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+#faqPage hr {
+  border: 1px solid var(--coral);
+  background-color: var(--coral);
+  margin: 1rem 0;
+  width: 95%;
+}
+
+#faqAnswers {
+  
+}
+
+#faqAnswers h4 {
+  padding: 0.5rem 1rem;
 }
 
 @media (min-width: 1000px) {

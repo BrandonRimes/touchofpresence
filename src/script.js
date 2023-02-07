@@ -13,6 +13,8 @@ const tribePage = document.getElementById("tribePage");
 // const serviceImg = document.querySelectorAll(".serviceImg");
 const connectPage = document.getElementById("connectPage");
 const bookPage = document.getElementById("bookPage");
+const faqPage = document.getElementById("faqPage");
+const faqQuestions = document.getElementById("faqQuestions");
 const logo = document.getElementById("logo");
 const cornerLogo = document.getElementById("cornerLogo");
 const mandala = document.getElementById("mandala");
@@ -59,7 +61,8 @@ const pages = {
   "tribeOption": tribePage,
   "servicesOption": servicesPage,
   "connectOption": connectPage,
-  "bookOption": bookPage
+  "bookOption": bookPage,
+  "faqOption": faqPage
 };
 
 const toggleMenuButton = () => {
@@ -216,6 +219,22 @@ window.onscroll = () => {
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 
   bodyworkImg.style.transform = `translateY(${(scroll * 1.3) - scroll - 300}px)`; //(scroll * 1.3) - scroll - 350
+
+  const faqs = {
+    "faqQ1": "faqA1",
+    "faqQ2": "faqA2",
+    "faqQ3": "faqA3",
+    "faqQ4": "faqA4",
+    "faqQ5": "faqA5",
+    "faqQ6": "faqA6"
+  };
+
+  faqQuestions.addEventListener("click", (e) => {
+    if (e.target.id in faqs) {
+      let answer = document.getElementById(faqs[e.target.id]);
+      answer.scrollIntoView({behavior: "smooth"});
+    }
+  });
 
   // BG.forEach(element => {
   //   element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;

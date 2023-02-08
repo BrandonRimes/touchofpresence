@@ -714,15 +714,14 @@ h2 {
 }
 
 #connectPage article {
-  padding-top: 0;
+  padding: 0;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.25);
-  padding-bottom: 10vh;
 }
 
 .connectSections {
   width: 100%;
   margin: 3% 0;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); */
   padding: 1rem 2%;
 }
 
@@ -741,6 +740,13 @@ h2 {
   font-family: var(--font);
   font-size: 1.5rem;
   text-align: center;
+}
+
+#connectPage hr {
+  width: 90%;
+  height: 2px;
+  background-color: var(--coral);
+  border: none;
 }
 
 .calltext {
@@ -808,8 +814,8 @@ h2 {
   display: block;
   text-indent: 0%;
   color: var(--coral);
-  border-right: 1px solid var(--coral);
-  border-bottom: 1px solid var(--coral);
+  border-right: 2px solid var(--coral);
+  border-bottom: 2px solid var(--coral);
   border-radius: 0 0 7px 0;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1287,30 +1293,11 @@ h2 {
   }
 
   #connectPage article {
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 50vh;
-    padding: 0;
+    padding: 2rem;
   }
 
   .connectSections {
-    height: 75%;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    margin: 0;
-    /* box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5); */
-    box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.5), 0px 0px 0px rgba(0, 0, 0, 0.5);
-    /* box-shadow: none; */
-    /* border: 1px solid black; */
-    transition: all 0.2s linear;
-  }
-
-  .connectSections:hover {
-    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.5), -2px 2px 5px rgba(0, 0, 0, 0.5);
-    /* border: none; */
+    margin: 1rem;
   }
 
   #connectMap {

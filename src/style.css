@@ -887,6 +887,10 @@ h2 {
 
 /* FAQ PAGE ---------------------------- */
 
+#faqBgImg1 {
+  background-image: url("https://ucarecdn.com/31f385dc-8e61-4613-9057-5eeb4cfc640d/-/preview/-/quality/smart/-/format/auto/");
+}
+
 #faqPage article {
   padding-bottom: 12vh;
 }

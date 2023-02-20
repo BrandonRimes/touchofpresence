@@ -3,14 +3,9 @@ const homePage = document.getElementById("homePage");
 const menuButton = document.getElementById("menuButton");
 const footer = document.getElementById("footer");
 const bookButton =document.getElementById("footerBook");
-// const servicesButton = document.getElementById("servicesButton");
-// const BG = document.querySelectorAll(".bg");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
-// const servicesPage = document.getElementById("servicesPage");
-// const services = document.querySelectorAll(".services");
-// const serviceImg = document.querySelectorAll(".serviceImg");
 const connectPage = document.getElementById("connectPage");
 const bookPage = document.getElementById("bookPage");
 const faqPage = document.getElementById("faqPage");
@@ -59,7 +54,6 @@ const pages = {
   "menuOption": menuPage,
   "aboutOption": aboutPage,
   "tribeOption": tribePage,
-  "servicesOption": servicesPage,
   "connectOption": connectPage,
   "bookOption": bookPage,
   "faqOption": faqPage
@@ -109,16 +103,6 @@ bookButton.addEventListener("click", (e) => {
   ctaDisplay();
 });
 
-// servicesButton.addEventListener("click", (e) => {
-//   activePage.style.display = "none";
-//   menuPage.style.display = "none";
-//   menuButton.className = "closed";
-//   activePage = pages["servicesOption"];
-//   activePage.style.display = "flex";
-//   html.scrollTop = 0;
-//   ctaDisplay();
-// });
-
 banner.addEventListener("click", (e) => {
   banner.style.display = "none";
 });
@@ -145,25 +129,7 @@ window.onload = function() {
   const mBook = document.getElementById("mBook");
   const element = mBook.contentWindow.document.getElementById("central-phrase");
   element.style.color = "black";
-  // if (mBook && mBook.contentWindow) {
-  //   mBook.contentWindow.postMessage(, "*");
-  // }
-  // let doc = mBook.contentDocument;
-  // doc.body.innerHTML = doc.body.innerHTML + '<style>h2 {color:black;}</style>';
 }
-
-// servicesPage.addEventListener("click", (e) => {
-//   if (e.target.parentElement.className.includes("services")) {
-//     let openService = document.getElementById(`${e.target.parentElement.id}`);
-//     services.forEach(element => {
-//       if (element.id != openService.id) {
-//         element.className = "services"
-//       }
-//     });
-//     openService.classList.toggle("open");
-//   }
-// });
-
 
 window.onscroll = () => {
   let scroll = html.scrollTop;
@@ -218,7 +184,7 @@ window.onscroll = () => {
   oxytocin.style.transform = `translateY(${scroll / 1}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 
-  bodyworkImg.style.transform = `translateY(${(scroll * 1.3) - scroll - 300}px)`; //(scroll * 1.3) - scroll - 350
+  bodyworkImg.style.transform = `translateY(${(scroll * 1.3) - scroll - 300}px)`;
 
   const faqs = {
     "faqQ1": "faqA1",
@@ -240,15 +206,5 @@ window.onscroll = () => {
       answer.style.color = "var(--coral)";
     }
   });
-
-  // BG.forEach(element => {
-  //   element.style.transform = `translateY(-${(scroll / screen.height) * 50}%)`;
-  // });
-
-  // if (window.innerWidth > 1000) {
-  //   serviceImg.forEach(element => {
-  //     element.style.transform = `translateY(-${scroll / 2}px)`;
-  //   });
-  // }
 
 };

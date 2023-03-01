@@ -184,7 +184,7 @@ window.onscroll = () => {
   oxytocin.style.transform = `translateY(${scroll / 1}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 
-  bodyworkImg.style.transform = `translateY(${(scroll * 1.3) - scroll - 300}px)`;
+  bodyworkImg.style.transform = `translateY(${(scroll * 1.3) - scroll - 200}px)`;
 
   const faqs = {
     "faqQ1": "faqA1",

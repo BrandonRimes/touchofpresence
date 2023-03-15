@@ -192,7 +192,9 @@ window.onscroll = () => {
     "faqQ3": "faqA3",
     "faqQ4": "faqA4",
     "faqQ5": "faqA5",
-    "faqQ6": "faqA6"
+    "faqQ6": "faqA6",
+    "faqQ7": "faqA7",
+    "faqQ8": "faqA8"
   };
 
   faqQuestions.addEventListener("click", (e) => {

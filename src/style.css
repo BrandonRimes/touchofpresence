@@ -527,7 +527,7 @@ h2 {
 }
 
 #bodyworkImgViewport {
-  height: 15rem;
+  height: 50rem;
   width: 100vw;
   background-color: transparent;
   overflow: hidden;
@@ -537,7 +537,7 @@ h2 {
 #bodyworkImg {
   position: absolute;
   top: 115rem;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
   z-index: -1;
   margin-left: 2.5rem;
@@ -614,7 +614,6 @@ h2 {
 /* CONNECT PAGE ------------------------------ */
 
 #connectBgImg1 {
-  background-position: right;
   background-image: url(https://ucarecdn.com/ea2aaefe-028b-4d46-b881-612600ed87cc/-/preview/-/quality/smart/);
 }
 
@@ -695,6 +694,23 @@ h2 {
 
 #aboutBgImg1 {
   background-image: url(https://ucarecdn.com/8db72644-8a31-4847-bec4-9380d785a52d/);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0rem 0 6rem 0;
+}
+
+#aboutBgImg1 p {
+  letter-spacing: 1px;
+  text-align: center;
+  /* color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.25); */
+  font-size: 1.25rem;
+  transform: translate3d(0,0,0);
+  color: rgb(59, 148, 172);
+  text-shadow: 1px 1px 5px var(--text-color);
+  mix-blend-mode: difference;
 }
 
 /* https://ucarecdn.com/1e04751c-8304-41e9-98fa-4ae32294d0b3/-/preview/-/quality/smart/ */
@@ -751,7 +767,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(https://ucarecdn.com/341be368-45ba-460e-9293-cef31b2f49ca/-/preview/-/quality/smart/);
+  /* background-image: url(https://ucarecdn.com/341be368-45ba-460e-9293-cef31b2f49ca/-/preview/-/quality/smart/); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -799,7 +815,8 @@ h2 {
 /* FAQ PAGE ---------------------------- */
 
 #faqBgImg1 {
-  background-image: url("https://ucarecdn.com/31f385dc-8e61-4613-9057-5eeb4cfc640d/-/preview/-/quality/smart/-/format/auto/");
+  background-position: right;
+  background-image: url("https://ucarecdn.com/ea2aaefe-028b-4d46-b881-612600ed87cc/-/preview/-/quality/smart/");
 }
 
 #faqPage article {
@@ -1016,6 +1033,10 @@ h2 {
 
   .homeContents {
     padding: 3rem;
+  }
+
+  #homeContact * {
+    font-size: 1.5rem;
   }
 
   #neuroInt {

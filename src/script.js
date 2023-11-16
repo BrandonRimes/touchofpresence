@@ -114,9 +114,9 @@ learnMoreButtons.forEach(button => {
     activePage = pages["servicesOption"];
     activePage.style.display = "flex";
     if (e.target.id == "aboutNeuroInt") {
-      html.scrollTop = 740;
+      html.scrollTop = 725;
     } else if (e.target.id == "aboutBodywork") {
-      html.scrollTop = 1910;
+      html.scrollTop = 1925;
     } else {
       html.scrollTop = 0;
     };

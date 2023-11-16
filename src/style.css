@@ -299,6 +299,28 @@ footer h4 {
   height: 100vh;
 }
 
+.bookNowButtonBox,
+.learnMoreButtonBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: inherit;
+}
+
+.bookNowButton,
+.learnMoreButton {
+  padding: 0.5rem;
+  width: 9rem;
+  text-align: center;
+  border: 2px solid var(--coral);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* SEMANTICS -------------------- */
 
 article {
@@ -566,6 +588,7 @@ h2 {
 #menuPage,
 #aboutPage,
 #tribePage,
+#servicesPage,
 #connectPage,
 #bookPage,
 #faqPage {
@@ -748,6 +771,10 @@ h2 {
   background-image: url(https://ucarecdn.com/aad92bd7-241a-4d25-ac41-abd2c113b603/-/preview/-/quality/smart/-/format/auto/);
 }
 
+#tribePage .pageHeader {
+  font-size: 3.5rem;
+}
+
 .tribeImages {
   position: relative;
   background-size: cover;
@@ -778,6 +805,10 @@ h2 {
   background-image: url(https://ucarecdn.com/4e233dd5-71a7-431b-924e-85821dd3d9b6/-/preview/-/quality/smart/);
 }
 
+#maryImg {
+  background-image: url(https://ucarecdn.com/f1ccdc56-55e9-499c-a8e7-6df56a9cbe9d/-/preview/500x500/-/quality/smart/-/format/auto/);
+}
+
 #tribePage article {
   background-color: rgb(255, 255, 255);
   padding: 10vh 0;
@@ -798,6 +829,13 @@ h2 {
   font-size: 1.5rem;
 }
 
+.tribeSpacer {
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
 /* .bioEmphasis {
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -810,6 +848,12 @@ h2 {
 }
 #mBook h2 {
   color: black;
+}
+
+/* SERVICES PAGE ------------------------ */
+
+#servicesBgImg1 {
+  background-image: url(https://ucarecdn.com/31f385dc-8e61-4613-9057-5eeb4cfc640d/-/preview/500x500/-/quality/smart/-/format/auto/);
 }
 
 /* FAQ PAGE ---------------------------- */

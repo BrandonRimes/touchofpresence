@@ -1,11 +1,13 @@
 const html = document.documentElement;
-const homePage = document.getElementById("homePage");
-const menuButton = document.getElementById("menuButton");
 const footer = document.getElementById("footer");
-const bookButton =document.getElementById("footerBook");
+const menuButton = document.getElementById("menuButton");
+const bookButtons = document.querySelectorAll(".bookButton");
+const learnMoreButtons = document.querySelectorAll(".learnMoreButton");
+const homePage = document.getElementById("homePage");
 const menuPage = document.getElementById("menuPage");
 const aboutPage = document.getElementById("aboutPage");
 const tribePage = document.getElementById("tribePage");
+const servicesPage = document.getElementById("servicesPage");
 const connectPage = document.getElementById("connectPage");
 const bookPage = document.getElementById("bookPage");
 const faqPage = document.getElementById("faqPage");
@@ -54,6 +56,7 @@ const pages = {
   "menuOption": menuPage,
   "aboutOption": aboutPage,
   "tribeOption": tribePage,
+  "servicesOption": servicesPage,
   "connectOption": connectPage,
   "bookOption": bookPage,
   "faqOption": faqPage
@@ -93,14 +96,31 @@ menuPage.addEventListener("click", (e) => {
   };
 });
 
-bookButton.addEventListener("click", (e) => {
-  activePage.style.display = "none";
-  menuPage.style.display = "none";
-  menuButton.className = "closed";
-  activePage = pages["bookOption"];
-  activePage.style.display = "flex";
-  html.scrollTop = 0;
-  ctaDisplay();
+bookButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    activePage.style.display = "none";
+    menuPage.style.display = "none";
+    menuButton.className = "closed";
+    activePage = pages["bookOption"];
+    activePage.style.display = "flex";
+    html.scrollTop = 0;
+    ctaDisplay();
+  });
+});
+
+learnMoreButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    activePage.style.display = "none";
+    activePage = pages["servicesOption"];
+    activePage.style.display = "flex";
+    if (e.target.id == "aboutNeuroInt") {
+      html.scrollTop = 750;
+    } else if (e.target.id == "aboutBodywork") {
+      html.scrollTop = 1900;
+    } else {
+      html.scrollTop = 0;
+    };
+  });
 });
 
 banner.addEventListener("click", (e) => {

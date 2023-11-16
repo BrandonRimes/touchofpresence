@@ -313,7 +313,7 @@ footer h4 {
 .bookNowButton,
 .learnMoreButton {
   padding: 0.5rem;
-  width: 9rem;
+  width: auto;
   text-align: center;
   border: 2px solid var(--coral);
   border-radius: 0.5rem;

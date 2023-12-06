@@ -1223,4 +1223,11 @@ h2 {
     transition: width 0.5s linear;
   }
 
+  #aboutPage p,
+  #tribePage p,
+  #servicesPage p,
+  #faqPage p {
+    max-width: 50vw;
+  }
+
 }

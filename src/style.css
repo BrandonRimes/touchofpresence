@@ -722,6 +722,7 @@ h2 {
   align-items: center;
   justify-content: space-evenly;
   padding: 0rem 0 6rem 0;
+  background-position: bottom;
 }
 
 #aboutBgImg1 p {

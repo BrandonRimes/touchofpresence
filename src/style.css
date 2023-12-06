@@ -1227,7 +1227,7 @@ h2 {
   #tribePage p,
   #servicesPage p,
   #faqPage p {
-    max-width: 50vw;
+    max-width: 75vw;
   }
 
 }

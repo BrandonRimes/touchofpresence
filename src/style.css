@@ -348,7 +348,7 @@ p {
   margin: 0.5rem 0;
   padding: 0 1rem;
   text-indent: 1rem;
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 /* HOME PAGE ---------------------------------- */
@@ -1092,10 +1092,11 @@ h2 {
 
   #neuroIntText {
     padding: 0;
+    width: 45%;
   }
   
   #neuroIntImg {
-    height: 33vh;
+    height: 40vh;
     width: 45%;
   } 
 

@@ -30,12 +30,12 @@ body {
   color: var(--text-color);
 }
 
-/* header {
+header {
   position: fixed;
-  height: 10%;
+  height: 5rem;
   width: 100%;
   z-index: 50;
-} */
+}
 
 #cornerLogo,
 #menuButton {
@@ -258,16 +258,29 @@ footer h4 {
 .pageHeader {
   height: 100vh;
   width: 100%;
-  padding-bottom: 5rem;
+  padding: 1.5rem 0;
   color: white;
-  font-size: 4rem;
+  font-size: 0rem;
   font-weight: bolder;
   text-shadow: 1px 1px 1px var(--text-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   transform: translate3d(0,0,0);
   mix-blend-mode: difference;
+}
+
+#pageTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  font-size: 7.5vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--coral);
+  text-shadow: 1px 1px 1px black;
 }
 
 .bg {
@@ -296,6 +309,7 @@ footer h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
 }
 
 .bgImages.firstView {
@@ -303,14 +317,13 @@ footer h4 {
 }
 
 .quotes {
-  line-height: 2rem;
-  padding: 5rem 2rem;
+  line-height: 4vh;
+  padding: 14vh 2rem;
   letter-spacing: 1px;
   text-align: center;
   font-size: 1.25rem;
   transform: translate3d(0,0,0);
-  color: rgb(59, 148, 172);
-  text-shadow: 1px 1px 5px var(--text-color);
+  color: white; /* rgb(59, 148, 172) */
   mix-blend-mode: difference;
 }
 
@@ -741,10 +754,6 @@ h2 {
   padding-bottom: 10vh;
 }
 
-#aboutPage .pageHeader {
-  padding-bottom: 0rem;
-}
-
 #aboutTag {
   font-size: 1.33rem;
   margin: 1rem 0;
@@ -769,10 +778,6 @@ h2 {
 
 #tribeBgImg1 {
   background-image: url(https://ucarecdn.com/aad92bd7-241a-4d25-ac41-abd2c113b603/-/quality/smart/-/format/auto/);
-}
-
-#tribePage .pageHeader {
-  font-size: 3.5rem;
 }
 
 .tribeImages {

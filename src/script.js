@@ -1,6 +1,8 @@
 const html = document.documentElement;
+const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 const menuButton = document.getElementById("menuButton");
+const pageTitle = document.getElementById("pageTitle");
 const bookButtons = document.querySelectorAll(".bookButton");
 const learnMoreButtons = document.querySelectorAll(".learnMoreButton");
 const homePage = document.getElementById("homePage");
@@ -51,6 +53,7 @@ fetch(".netlify/functions/api")
 });
 
 let activePage = homePage;
+
 const pages = {
   "homeOption": homePage,
   "menuOption": menuPage,
@@ -60,6 +63,16 @@ const pages = {
   "connectOption": connectPage,
   "bookOption": bookPage,
   "faqOption": faqPage
+};
+
+const pageTitles = {
+  "menuOption": "Menu",
+  "aboutOption": "About",
+  "tribeOption": "Practitioners",
+  "servicesOption": "Services",
+  "connectOption": "Connect",
+  "bookOption": "Book",
+  "faqOption": "FAQ"
 };
 
 const toggleMenuButton = () => {
@@ -85,13 +98,15 @@ menuButton.addEventListener("click", (e) => {
 });
 
 menuPage.addEventListener("click", (e) => {
-  if (e.target.id in pages) {
+  let id = e.target.id;
+  if (id in pages) {
     toggleMenuButton();
     menuPage.style.display = "none";
     activePage.style.display = "none";
-    activePage = pages[e.target.id];
+    activePage = pages[id];
     activePage.style.display = "flex";
     html.scrollTop = 0;
+    if (id != homeOption) pageTitle.innerText = pageTitles[id];
     ctaDisplay();
   };
 });
@@ -153,6 +168,8 @@ window.onload = function() {
 
 window.onscroll = () => {
   let scroll = html.scrollTop;
+
+  if (activePage != homePage) header.style.backgroundColor = `rgba(255, 255, 255, ${scroll / 1000})`;
 
   if (this.oldScroll < this.scrollY && scroll > 1) {
     footer.style.transform = "translateY(5.5rem)";

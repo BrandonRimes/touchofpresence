@@ -293,10 +293,25 @@ footer h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bgImages.firstView {
   height: 100vh;
+}
+
+.quotes {
+  line-height: 3rem;
+  padding: 6rem 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.25rem;
+  transform: translate3d(0,0,0);
+  color: rgb(59, 148, 172);
+  text-shadow: 1px 1px 5px var(--text-color);
+  mix-blend-mode: difference;
 }
 
 .bookNowButtonBox,
@@ -717,24 +732,7 @@ h2 {
 
 #aboutBgImg1 {
   background-image: url(https://ucarecdn.com/f50c05fb-62a3-4193-9506-db7f29ed1a2a/kenrickmillsMF9Wy1NA55Iunsplash1.jpg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0rem 0 6rem 0;
   background-position: bottom;
-}
-
-#aboutBgImg1 p {
-  letter-spacing: 1px;
-  text-align: center;
-  /* color: rgba(0, 0, 0, 0.5);
-  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.25); */
-  font-size: 1.25rem;
-  transform: translate3d(0,0,0);
-  color: rgb(59, 148, 172);
-  text-shadow: 1px 1px 5px var(--text-color);
-  mix-blend-mode: difference;
 }
 
 /* https://ucarecdn.com/1e04751c-8304-41e9-98fa-4ae32294d0b3/-/preview/-/quality/smart/ */
@@ -804,11 +802,11 @@ h2 {
 }
 
 #ildikoImg {
-  background-image: url(https://ucarecdn.com/4e233dd5-71a7-431b-924e-85821dd3d9b6/-/preview/-/quality/smart/);
+  background-image: url(https://ucarecdn.com/e27de4b4-c7ea-46f2-a993-e9e5403d64ae/-/preview/-/quality/smart/-/format/auto/);
 }
 
 #maryImg {
-  background-image: url(https://ucarecdn.com/f1ccdc56-55e9-499c-a8e7-6df56a9cbe9d/-/preview/500x500/-/quality/smart/-/format/auto/);
+  background-image: url(https://ucarecdn.com/f1ccdc56-55e9-499c-a8e7-6df56a9cbe9d/-/preview/-/quality/smart/-/format/auto/);
 }
 
 #tribePage article {

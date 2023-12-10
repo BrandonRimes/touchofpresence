@@ -66,6 +66,7 @@ const pages = {
 };
 
 const pageTitles = {
+  "homeOption": "",
   "menuOption": "Menu",
   "aboutOption": "About",
   "tribeOption": "Practitioners",
@@ -106,7 +107,7 @@ menuPage.addEventListener("click", (e) => {
     activePage = pages[id];
     activePage.style.display = "flex";
     html.scrollTop = 0;
-    if (id != homeOption) pageTitle.innerText = pageTitles[id];
+    pageTitle.innerText = pageTitles[id];
     ctaDisplay();
   };
 });

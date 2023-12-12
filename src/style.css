@@ -323,8 +323,8 @@ footer h4 {
   text-align: center;
   font-size: 1.25rem;
   transform: translate3d(0,0,0);
-  color: white; /* rgb(59, 148, 172) */
-  mix-blend-mode: difference;
+  color: black; /* rgb(59, 148, 172) */
+  /* mix-blend-mode: difference; */
 }
 
 .bookNowButtonBox,
@@ -1094,6 +1094,10 @@ h2 {
 
   #homeContact * {
     font-size: 1.5rem;
+  }
+
+  .quotes {
+    padding: 22vh 12vw;
   }
 
   #neuroInt {

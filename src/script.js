@@ -118,6 +118,7 @@ bookButtons.forEach(button => {
     menuPage.style.display = "none";
     menuButton.className = "closed";
     activePage = pages["bookOption"];
+    pageTitle.innerText = pageTitles['bookOption'];
     activePage.style.display = "flex";
     html.scrollTop = 0;
     ctaDisplay();
@@ -128,6 +129,7 @@ learnMoreButtons.forEach(button => {
   button.addEventListener("click", (e) => {
     activePage.style.display = "none";
     activePage = pages["servicesOption"];
+    pageTitle.innerText = pageTitles['servicesOption'];
     activePage.style.display = "flex";
     if (e.target.id == "aboutNeuroInt") {
       html.scrollTop = 725;
@@ -158,6 +160,7 @@ cornerLogo.addEventListener("click", (e) => {
   activePage = pages["homeOption"];
   activePage.style.display = "flex";
   html.scrollTop = 0;
+  pageTitle.innerText = pageTitles['homeOption'];
   ctaDisplay();
 });
 

@@ -325,8 +325,8 @@ footer h4 {
   text-align: center;
   font-size: 1.25rem;
   transform: translate3d(0,0,0);
-  color: black; /* rgb(59, 148, 172) */
-  /* mix-blend-mode: difference; */
+  color: var(--coral); /* rgb(59, 148, 172) */
+  mix-blend-mode: difference;
 }
 
 .bookNowButtonBox,
@@ -626,7 +626,20 @@ h2 {
 }
 
 #bookPage {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  /* padding-top: 10vh; */
+}
+
+#bookPage iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #menuPage {

@@ -98,6 +98,12 @@ menuButton.addEventListener("click", (e) => {
   ctaDisplay();
 });
 
+const loadBook = () => {
+  const mBook = document.getElementById("mBook");
+  const element = mBook.contentWindow.document.getElementById("central-phrase");
+  element.style.color = "black";
+};
+
 menuPage.addEventListener("click", (e) => {
   let id = e.target.id;
   if (id in pages) {
@@ -164,11 +170,11 @@ cornerLogo.addEventListener("click", (e) => {
   ctaDisplay();
 });
 
-window.onload = function() {
-  const mBook = document.getElementById("mBook");
-  const element = mBook.contentWindow.document.getElementById("central-phrase");
-  element.style.color = "black";
-}
+// window.onload = function() {
+//   const mBook = document.getElementById("mBook");
+//   const element = mBook.contentWindow.document.getElementById("central-phrase");
+//   element.style.color = "black";
+// }
 
 window.onscroll = () => {
   let scroll = html.scrollTop;

@@ -566,6 +566,7 @@ h2 {
 
 #bodyworks {
   margin-top: 0;
+  padding-top: 0;
 }
 
 .bodyworks {
@@ -787,6 +788,11 @@ h2 {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   width: auto;
+}
+
+.aboutEmphasis {
+  display: block;
+  padding: 0;
 }
 
 /* TRIBE PAGE ---------------------------------- */

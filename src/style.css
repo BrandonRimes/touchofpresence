@@ -1151,6 +1151,26 @@ h2 {
     padding: 3rem;
   }
 
+  #bodyworksBox {
+    width: 40rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #bodyworks {
+    width: 40rem;
+  }
+
+  .bodyworks {
+    width: 20rem;
+    padding: 0.5rem 0;
+  }
+
+  #bodyworksImg {
+    width: 15rem;
+    background-size: contain;
+  }
+
   #homeContact * {
     font-size: 1.5rem;
   }

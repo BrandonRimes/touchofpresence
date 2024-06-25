@@ -1149,10 +1149,7 @@ h2 {
 
   .homeContents {
     padding: 3rem;
-  }
-
-  #missionStatement {
-    width: 80rem;
+    max-width: 80rem;
   }
 
   #bodyworksBox {

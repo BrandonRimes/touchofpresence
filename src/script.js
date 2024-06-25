@@ -31,7 +31,7 @@ const presenceName = document.getElementById("presenceName");
 const mapBox = document.getElementById("connectMap");
 const banner = document.getElementById("banner");
 const cta = document.querySelector(".CTA");
-const bodyworkImg = document.getElementById("bodyworkImg");
+const bodyworksImg = document.getElementById("bodyworksImg");
 
 let serverURL;
 
@@ -231,7 +231,7 @@ window.onscroll = () => {
   oxytocin.style.transform = `translateY(${scroll / 1}px)`;
   oxytocin.style.opacity = `${100 - (scroll / 2)}%`
 
-  bodyworkImg.style.transform = `translateY(${(scroll * 1.3) - scroll - 200}px)`;
+  bodyworksImg.style.transform = `translateY(${(scroll * 1.1) - scroll - 200}px)`;
 
   const faqs = {
     "faqQ1": "faqA1",

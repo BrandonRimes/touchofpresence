@@ -545,6 +545,7 @@ h2 {
   width: 90%;
 }
 
+
 #neuroInt {
   padding-top: 0;
 }
@@ -564,6 +565,11 @@ h2 {
   padding-top: 2rem;
 }
 
+#bodyworksBox {
+  display: flex;
+  position: relative;
+}
+
 #bodyworks {
   margin-top: 0;
   padding-top: 0;
@@ -573,13 +579,27 @@ h2 {
   width: 100%;
   text-align: left;
   padding: 0.5rem 1.25rem;
+  padding-left: 5rem;
 }
 
 #bodyworkh2 {
   padding: 2rem;
 }
 
-#bodyworkImgViewport {
+#bodyworksImg {
+  position: absolute;
+  top: -3rem;
+  left: -4rem;
+  height: 120%;
+  width: 10rem;
+  /* z-index: -1; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://ucarecdn.com/82d13c71-7365-4631-b26f-5dac54e75f4e/-/preview/-/quality/smart/-/format/auto/");
+}
+
+/* #bodyworkImgViewport {
   height: 50rem;
   width: 100vw;
   background-color: transparent;
@@ -598,7 +618,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("https://ucarecdn.com/82d13c71-7365-4631-b26f-5dac54e75f4e/-/preview/-/quality/smart/-/format/auto/");
-}
+} */
 
 #homeContact {
   padding: 2rem;

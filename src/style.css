@@ -796,7 +796,9 @@ h2 {
 }
 
 .aboutEmphasis,
-.bioEmphasis {
+.bioEmphasis,
+.servicesEmphasis,
+.servicesInlineEmphasis {
   font-size: 1.5rem;
   letter-spacing: 1px;
   /* display: inline-block; */
@@ -900,6 +902,22 @@ h2 {
 
 #servicesBgImg1 {
   background-image: url(https://ucarecdn.com/d23c498a-b36e-41b5-96e2-795341ab6cff/-/quality/smart/-/format/auto/);
+}
+
+#servicesHeader {
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.servicesEmphasis {
+  display: block;
+  padding-left: 0;
+}
+
+.servicesInlineEmphasis {
+  padding: 0;
+  font-size: 1rem;
 }
 
 /* FAQ PAGE ---------------------------- */

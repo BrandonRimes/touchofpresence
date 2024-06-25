@@ -1151,6 +1151,10 @@ h2 {
     padding: 3rem;
   }
 
+  #missionStatement {
+    width: 80rem;
+  }
+
   #bodyworksBox {
     width: 40rem;
     align-items: center;

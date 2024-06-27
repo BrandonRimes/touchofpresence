@@ -378,7 +378,7 @@ p {
   margin: 0.5rem 0;
   padding: 0 1rem;
   text-indent: 1rem;
-  /* max-width: 500px; */
+  font-family: var(--font);
 }
 
 /* HOME PAGE ---------------------------------- */
@@ -545,24 +545,8 @@ h2 {
   width: 90%;
 }
 
-
-#neuroInt {
-  padding-top: 0;
-}
-
-#neuroIntImg {
-  height: 25vh;
-  width: 90vw;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("https://ucarecdn.com/98accf71-2c2a-4301-9a25-a06ecd095ad4/-/preview/-/quality/smart/-/format/auto/");
-  box-shadow: 2px 2px 5px var(--text-color);
-  margin: 0;
-}
-
-#neuroIntText {
-  padding-top: 2rem;
+#missionStatement {
+  padding: 0 1rem 1rem 1rem;
 }
 
 #bodyworksBox {
@@ -588,7 +572,7 @@ h2 {
 
 #bodyworksImg {
   position: absolute;
-  top: -3rem;
+  top: -6rem;
   left: -4rem;
   height: 120%;
   width: 10rem;
@@ -955,6 +939,11 @@ h2 {
 
 @media (min-width: 1000px) {
 
+  p {
+    font-size: 1.25rem;
+    max-width: 60rem;
+  }
+
   header {
     height: 8rem;
   }
@@ -1149,7 +1138,7 @@ h2 {
 
   .homeContents {
     padding: 3rem;
-    max-width: 80rem;
+    max-width: 60rem;
   }
 
   #bodyworksBox {
@@ -1168,6 +1157,7 @@ h2 {
   }
 
   #bodyworksImg {
+    top: -5rem;
     width: 15rem;
     background-size: contain;
   }

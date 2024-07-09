@@ -937,6 +937,10 @@ h2 {
   color: black;
 }
 
+.faqAnswerPoint {
+  font-weight: bolder;
+}
+
 @media (min-width: 1000px) {
 
   p {
@@ -946,6 +950,10 @@ h2 {
 
   header {
     height: 8rem;
+  }
+
+  article * {
+    max-width: 33vw;
   }
 
   #pageTitle {
@@ -1309,11 +1317,19 @@ h2 {
     transition: width 0.5s linear;
   }
 
-  #aboutPage p,
+  .servicesEmphasis {
+    font-weight: bolder;
+  }
+
+  .servicesInlineEmphasis {
+    font-size: 1.25rem;
+  }
+
+  /* #aboutPage p,
   #tribePage p,
   #servicesPage p,
   #faqPage p {
     max-width: 75vw;
-  }
+  } */
 
 }

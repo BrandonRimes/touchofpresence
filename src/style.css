@@ -796,6 +796,10 @@ h2 {
   width: auto;
 }
 
+.servicesInlineEmphasis {
+  font-size: 1.33rem;
+}
+
 .aboutEmphasis {
   display: block;
   padding: 0;
@@ -944,7 +948,7 @@ h2 {
 
   p {
     font-size: 1.5rem;
-    max-width: 60rem;
+    max-width: 50vw;
   }
 
   header {
@@ -952,11 +956,18 @@ h2 {
   }
 
   article * {
-    max-width: 33vw;
+    max-width: 50vw;
   }
 
   #pageTitle {
     font-size: 4rem;
+  }
+
+  .bookNowButton:hover,
+  .learnMoreButton:hover {
+    background-color: var(--coral);
+    color: var(--text-background);
+    box-shadow: 2px 2px 0px var(--text-color);
   }
 
   #cornerLogo,

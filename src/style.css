@@ -583,6 +583,27 @@ h2 {
   background-image: url("https://ucarecdn.com/82d13c71-7365-4631-b26f-5dac54e75f4e/-/preview/-/quality/smart/-/format/auto/");
 }
 
+#neuroIntCoachBox {
+  display: flex;
+  position: relative;
+}
+
+/* #neuroIntCoachBox p {
+  padding: 1rem 10vw;
+} */
+
+#neuroIntCoachImg {
+  position: absolute;
+  top: 0;
+  right: -30%;
+  height: 100%;
+  width: 0rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/469/753/non_2x/vector-left-right-brain-concept.jpg");
+}
+
 /* #bodyworkImgViewport {
   height: 50rem;
   width: 100vw;
@@ -1178,6 +1199,10 @@ h2 {
     top: -5rem;
     width: 15rem;
     background-size: contain;
+  }
+
+  #neuroIntCoachImg {
+    width: 20rem;
   }
 
   #homeContact * {

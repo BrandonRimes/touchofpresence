@@ -557,25 +557,32 @@ h2 {
 #bodyworks {
   margin-top: 0;
   padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .bodyworks {
   width: 100%;
   text-align: left;
-  padding: 0.5rem 1.25rem;
-  padding-left: 5rem;
+  padding: 0.5rem 0rem;
+  /* padding-left: 5rem; */
 }
 
 #bodyworkh2 {
   padding: 2rem;
 }
 
+#bodyworksOptions {
+  margin-left: -4rem;
+}
+
 #bodyworksImg {
   position: absolute;
   top: -6rem;
-  left: -4rem;
+  right: -9rem;
   height: 120%;
   width: 10rem;
+  transform: rotateY(180deg);
   /* z-index: -1; */
   background-position: center;
   background-repeat: no-repeat;
@@ -1193,11 +1200,19 @@ h2 {
   .bodyworks {
     width: 20rem;
     padding: 0.5rem 0;
+    padding-left: 1rem;
+  }
+
+  #bodyworksOptions {
+    margin-left: 0;
   }
 
   #bodyworksImg {
     top: -5rem;
+    left: -5rem;
+    right: unset;
     width: 15rem;
+    transform: unset;
     background-size: contain;
   }
 
